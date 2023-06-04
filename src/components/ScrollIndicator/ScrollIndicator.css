@@ -1,0 +1,38 @@
+.scroll-indicator {
+    position: fixed;
+    right: 32px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 5;
+}
+
+.scroll-indicator a {
+    position: relative;
+}
+
+.scroll-indicator a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.scroll-indicator a::before {
+    content: attr(data-section);
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translateY(-30%);
+    opacity: 0;
+    transition: all 400ms ease;
+}
+
+.scroll-indicator a:hover::before {
+    opacity: 1;
+    transform: translate(0, -30%);
+}
+
