@@ -17,8 +17,8 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
     background-color: black;
+    transform: rotate(-45deg);
 }
 
 .scroll-indicator a::before {
@@ -36,3 +36,21 @@
     transform: translate(0, -30%);
 }
 
+.scroll-indicator a:hover::after {
+    background-color: aquamarine;
+}
+
+.scroll-indicator a.active::after {
+    width: 15px;
+    height: 15px;
+    border: 2px solid aquamarine;
+    background-color: transparent;
+    transform: rotate(0deg);
+    transform: translateX(-14%);
+    transition: all 200ms ease;
+}
+
+.scroll-indicator a.active::before {
+    opacity: 1;
+    transform: translate(0, -30%);
+}
