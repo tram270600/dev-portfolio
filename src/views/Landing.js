@@ -3,12 +3,14 @@ import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import Banner from "components/Banner/Banner.js";
 import ScrollIndicator from "components/ScrollIndicator/ScrollIndicator";
+import ContactMethod from "components/ContactMethod/ContactMethod";
 
 export default function Landing() {
   return (
     <>
       <Navbar transparent />
       <ScrollIndicator> </ScrollIndicator>
+      <ContactMethod></ContactMethod>
       <main>
         <div
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -49,7 +51,6 @@ export default function Landing() {
             </svg>
           </div>
         </div>
-        {/* <div className="scroll-indicator"> */}
           <section id="a" className="pb-20 bg-gray-300 -mt-24">
             <div className="container mx-auto px-4">
               <div className="flex flex-wrap">
@@ -569,7 +570,6 @@ export default function Landing() {
               </div>
             </div>
           </section>
-        {/* </div> */}
       </main>
       <Footer />
     </>
