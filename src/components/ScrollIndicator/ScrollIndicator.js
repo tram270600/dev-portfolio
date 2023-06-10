@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./ScrollIndicator.css";
+import "./ScrollIndicator.scss";
 
 export default function ScrollIndicator() {
-  const pageSelections = ["a", "b", "c", "d"];
+  const pageSelections = ["About", "Experience", "Works", "Skils", "Contact"];
   const pageSelectionIds = pageSelections.map(
     (pageSelection) => "#" + pageSelection
   );
@@ -35,7 +35,7 @@ export default function ScrollIndicator() {
         <a
           href={pageSelectionId}
           key={index}
-          data-section={pageSelections[index]}
+          data-section={`0${(index+1)}.\u00A0${pageSelections[index]}`}
           className={`${activeDotIndex === index ? "active" : ""}`}
         ></a>
       ))}

@@ -7,11 +7,12 @@ import { ReactComponent as Instagram } from "../../assets/contact-method/contact
 export default function ContactMethod() {
   const contactNames = ["Github", "LinkedIn", "Gmail", "Instagram"];
   const contactLink = [
-    "https://github.com/bchiang7",
-    "LinkedIn",
-    "Gmail",
-    "Instagram",
+    "https://github.com/NguyenDat251",
+    "https://www.linkedin.com/in/%C4%91%E1%BA%A1t-nguy%E1%BB%85n-a77ba518a/",
+    "nguyenquocdat2511998@gmail.com ",
+    "https://www.instagram.com/no_quo_do/",
   ];
+
   const getContactIconComponent = (contactName) => {
     switch (contactName) {
       case "Github":
@@ -31,15 +32,25 @@ export default function ContactMethod() {
       <ul className="contact-method__boundary">
         {contactNames.map((contactName, index) => (
           <li className="contact-method__component">
-            <a
-              href={contactLink[index]}
-              key={index}
-              data-section={contactName}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {getContactIconComponent(contactName)}
-            </a>
+            {contactName === "Gmail" ? (
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguyenquocdat2511998@gmail.com "
+                key={index}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {getContactIconComponent(contactName)}
+              </a>
+            ) : (
+              <a
+                href={contactLink[index]}
+                key={index}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {getContactIconComponent(contactName)}
+              </a>
+            )}
           </li>
         ))}
         <div class="vertical-line"></div>
