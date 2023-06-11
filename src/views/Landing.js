@@ -2,11 +2,15 @@ import React from "react";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import Banner from "components/Banner/Banner.js";
+import ScrollIndicator from "components/ScrollIndicator/ScrollIndicator";
+import ContactMethod from "components/ContactMethod/ContactMethod";
 
 export default function Landing() {
   return (
     <>
       <Navbar transparent />
+      <ScrollIndicator> </ScrollIndicator>
+      <ContactMethod></ContactMethod>
       <main>
         <div
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -47,8 +51,7 @@ export default function Landing() {
             </svg>
           </div>
         </div>
-
-        <section className="pb-20 bg-gray-300 -mt-24">
+        <section id="About" className="pb-20 bg-gray-300 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -162,7 +165,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="relative py-20">
+        <section id="Experience" className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: "80px" }}
@@ -251,7 +254,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="pt-20 pb-48">
+        <section id="Works" className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -412,7 +415,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="pb-20 relative block bg-gray-900">
+        <section id="Skils" className="pb-20 relative block bg-gray-900">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: "80px" }}
@@ -486,7 +489,10 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section className="relative block py-24 lg:pt-0 bg-gray-900">
+        <section
+          id="Contact"
+          className="relative block py-24 lg:pt-0 bg-gray-900"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
