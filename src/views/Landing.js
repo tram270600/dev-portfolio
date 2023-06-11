@@ -18,7 +18,14 @@ export default function Landing() {
       sectionSelector: ".vertical-scrolling",
       navigation: true,
       parallax: true,
-      anchors: ["00.Greeting", "01.About", "02.Experience", "03.Works", "04.Skills", "05.Contact"],
+      anchors: [
+        "00.Greeting",
+        "01.About",
+        "02.Experience",
+        "03.Works",
+        "04.Skills",
+        "05.Contact",
+      ],
       scrollingSpeed: 700,
     });
   }, []);
@@ -27,8 +34,12 @@ export default function Landing() {
       <Navbar transparent />
       {/* <ScrollIndicator> </ScrollIndicator> */}
       <ContactMethod></ContactMethod>
-      <main id="fullpage" className="bg-[--navy] px-[150px]">
-        <section id="Greeting" className="vertical-scrolling" data-anchor="Greeting">
+      <main id="fullpage" className="bg-[--navy] px-[150px] text-[--slate]">
+        <section
+          id="Greeting"
+          className="vertical-scrolling"
+          data-anchor="Greeting"
+        >
           <Banner />
         </section>
         <section id="About" className="vertical-scrolling">
