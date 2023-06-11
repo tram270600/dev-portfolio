@@ -42,29 +42,6 @@ export default function Navbar(props) {
           }
           id="example-navbar-warning"
         >
-          <ul className="flex flex-col lg:flex-row list-none mr-auto">
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
-              >
-                <i
-                  className={
-                    (props.transparent
-                      ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " far fa-file-alt text-lg leading-lg mr-2"
-                  }
-                />{" "}
-                Docs
-              </a>
-            </li>
-          </ul>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="flex items-center">
               <a
@@ -102,8 +79,7 @@ export default function Navbar(props) {
                   className={
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " fab fa-twitter text-lg leading-lg "
+                      : "text-gray-500") + " fab fa-twitter text-lg leading-lg "
                   }
                 />
                 <span className="lg:hidden inline-block ml-2">Tweet</span>
@@ -124,8 +100,7 @@ export default function Navbar(props) {
                   className={
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " fab fa-github text-lg leading-lg "
+                      : "text-gray-500") + " fab fa-github text-lg leading-lg "
                   }
                 />
                 <span className="lg:hidden inline-block ml-2">Star</span>
