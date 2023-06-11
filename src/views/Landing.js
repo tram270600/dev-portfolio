@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "components/Navbar.js";
-import Footer from "components/Footer.js";
 import Banner from "components/Banner/Banner.js";
 import AboutMe from "components/AboutMe/AboutMe.js";
 import Experience from "components/Experience/Experience.js";
@@ -15,7 +14,7 @@ export default function Landing() {
       <Navbar transparent />
       <ScrollIndicator> </ScrollIndicator>
       <ContactMethod></ContactMethod>
-      <main className="bg-[--navy] px-[150px]">
+      <main className="bg-[--navy] px-48 text-[--slate]">
         <Banner />
         <AboutMe />
         <Experience />
