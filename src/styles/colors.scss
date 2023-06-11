@@ -1,0 +1,12 @@
+:root {
+  --white: #ffff;
+  --light-slate: #a8b2d1;
+  --green-500: #64ffda;
+}
+@mixin fontStyle($weight, $size, $height) {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}

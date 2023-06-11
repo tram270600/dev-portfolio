@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "../../styles/colors.scss";
+
+.title {
+  @include fontStyle(700, 48px, 80px);
+  margin-bottom: 12px;
+}
+
+.contact-method__boundary {
+  position: fixed;
+  left: 32px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 5;
+  transition: transform 1s;
+}
+
+.vertical-line {
+  border-left: 3px solid var(--light-slate);
+  height: 90px;
+  margin-left: 50%;
+  bottom: 0;
+}
+
+.contact-method__component a svg {
+   stroke: var(--light-slate); 
+}
+.contact-method__component a:hover svg {
+   stroke: var(--green-500); 
+}
+
+.contact-method__component:hover {
+  transform: translate(0px,-2px);
+}
