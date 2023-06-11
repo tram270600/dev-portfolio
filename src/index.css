@@ -30,6 +30,7 @@
 
 body {
     counter-reset: section;
+    background-color: var(--navy);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,4 +70,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 1px;
     margin-left: 20px;
     background-color: var(--lightest-navy);
+}
+body {
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }

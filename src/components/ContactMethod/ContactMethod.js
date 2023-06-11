@@ -31,7 +31,7 @@ export default function ContactMethod() {
     <>
       <ul className="contact-method__boundary">
         {contactNames.map((contactName, index) => (
-          <li className="contact-method__component">
+          <li className="contact-method__component" key={index}>
             {contactName === "Gmail" ? (
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguyenquocdat2511998@gmail.com "
@@ -53,7 +53,7 @@ export default function ContactMethod() {
             )}
           </li>
         ))}
-        <div class="vertical-line"></div>
+        <div className="vertical-line"></div>
       </ul>
     </>
   );

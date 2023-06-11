@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ScrollIndicator.scss";
 
 export default function ScrollIndicator() {
-  const pageSelections = ["About", "Experience", "Works", "Skils", "Contact"];
+  const pageSelections = ["Greeting", "About", "Experience", "Works", "Skills", "Contact"];
   const pageSelectionIds = pageSelections.map(
     (pageSelection) => "#" + pageSelection
   );
@@ -13,16 +13,17 @@ export default function ScrollIndicator() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const currentIndex = pageSelectionIds.indexOf(`#${entry.target.id}`);
+          console.log("hêhhehe", currentIndex);
           setActiveDotIndex(currentIndex);
         }
       });
     };
 
     const options = {
-      threshold: 0.3,
+      threshold: 0.5,
     };
     const observer = new IntersectionObserver(onSectionIntersection, options);
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(".vertical-scrolling");
     sections.forEach((section) => {
       observer.observe(section);
     });
@@ -35,7 +36,7 @@ export default function ScrollIndicator() {
         <a
           href={pageSelectionId}
           key={index}
-          data-section={`0${(index+1)}.\u00A0${pageSelections[index]}`}
+          data-section={`0${index}.\u00A0${pageSelections[index]}`}
           className={`${activeDotIndex === index ? "active" : ""}`}
         ></a>
       ))}
