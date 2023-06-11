@@ -13,7 +13,6 @@ export default function ScrollIndicator() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const currentIndex = pageSelectionIds.indexOf(`#${entry.target.id}`);
-          console.log("hêhhehe", currentIndex);
           setActiveDotIndex(currentIndex);
         }
       });

@@ -10,6 +10,7 @@ import MySkill from "components/MySkill/MySkill";
 import ScrollIndicator from "components/ScrollIndicator/ScrollIndicator";
 import ContactMethod from "components/ContactMethod/ContactMethod";
 import fullpage from "fullpage.js";
+import "./Landing.scss";
 
 export default function Landing() {
   useEffect(() => {
@@ -17,15 +18,17 @@ export default function Landing() {
       sectionSelector: ".vertical-scrolling",
       navigation: true,
       parallax: true,
+      anchors: ["00.Greeting", "01.About", "02.Experience", "03.Works", "04.Skills", "05.Contact"],
+      scrollingSpeed: 700,
     });
   }, []);
   return (
     <>
       <Navbar transparent />
-      <ScrollIndicator> </ScrollIndicator>
+      {/* <ScrollIndicator> </ScrollIndicator> */}
       <ContactMethod></ContactMethod>
       <main id="fullpage" className="bg-[--navy] px-[150px]">
-        <section id="Greeting" className="vertical-scrolling">
+        <section id="Greeting" className="vertical-scrolling" data-anchor="Greeting">
           <Banner />
         </section>
         <section id="About" className="vertical-scrolling">

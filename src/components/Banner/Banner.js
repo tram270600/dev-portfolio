@@ -51,7 +51,7 @@ const IAmFeDev = () => (
 
 export default function Banner() {
   return (
-    <section className="h-screen flex flex-col justify-center items-start">
+    <div className="h-screen flex flex-col justify-center items-start">
       <h1 className="text-[--green] mb-7">Hi my name is</h1>
       <h2 className="text-[--lightest-slate] font-semibold text-7xl mb-2">
         Dat Nguyen
@@ -64,6 +64,6 @@ export default function Banner() {
         designing) exceptional digital experiences. Currently, I’m focused on
         building accessible, human-centered products at Upstatement.
       </p>
-    </section>
+    </div>
   );
 }
