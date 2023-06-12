@@ -99,7 +99,7 @@ export default function Experience() {
           <DescriptionItem content={experienceData[selectedCompanyIndex].p2} />
           <div className="flex gap-2 flex-wrap mt-5">
             {experienceData[selectedCompanyIndex].skills.map((skill) => (
-              <Skill skill={skill} />
+              <Skill key={skill} skill={skill} />
             ))}
           </div>
         </div>

@@ -24,6 +24,7 @@ const SectionWrapper = ({ id, children }) => {
 export default function Landing() {
   useEffect(() => {
     new fullpage("#fullpage", {
+      licenseKey: "gplv3-license",
       sectionSelector: ".vertical-scrolling",
       navigation: true,
       parallax: true,
