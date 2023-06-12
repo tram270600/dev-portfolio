@@ -8,6 +8,7 @@ import Experience from "components/Experience/Experience.js";
 import MyBlog from "components/MyBlog/MyBlog";
 import MySkill from "components/MySkill/MySkill";
 import ContactMethod from "components/ContactMethod/ContactMethod";
+import ContactMethodFooter from "components/ContactMethod/ContactMethodFooter";
 import fullpage from "fullpage.js";
 import "./Landing.scss";
 
@@ -42,7 +43,7 @@ export default function Landing() {
   return (
     <>
       <Navbar transparent />
-      <ContactMethod></ContactMethod>
+      <ContactMethod />
       <main
         id="fullpage"
         className="bg-[--navy] px-6 md:px-20 lg:px-[150px] 2xl:px-[350px] text-[--slate]"
@@ -67,7 +68,9 @@ export default function Landing() {
           <MySkill />
         </SectionWrapper>
 
-        <section id="Contact" className="vertical-scrolling">
+        <section id="Contact" className="vertical-scrolling pb-8">
+          <ContactMethodFooter />
+
           <Footer />
         </section>
       </main>
