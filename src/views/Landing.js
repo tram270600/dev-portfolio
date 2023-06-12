@@ -7,10 +7,19 @@ import AboutMe from "components/AboutMe/AboutMe.js";
 import Experience from "components/Experience/Experience.js";
 import MyBlog from "components/MyBlog/MyBlog";
 import MySkill from "components/MySkill/MySkill";
-import ScrollIndicator from "components/ScrollIndicator/ScrollIndicator";
 import ContactMethod from "components/ContactMethod/ContactMethod";
 import fullpage from "fullpage.js";
 import "./Landing.scss";
+
+const SectionWrapper = ({ id, children }) => {
+  return (
+    <section id={id} className="vertical-scrolling">
+      <div className="h-screen flex flex-col items-start pt-8 lg:pt-24 justify-center 2xl:p-0">
+        {children}
+      </div>
+    </section>
+  );
+};
 
 export default function Landing() {
   useEffect(() => {
@@ -32,9 +41,11 @@ export default function Landing() {
   return (
     <>
       <Navbar transparent />
-      {/* <ScrollIndicator> </ScrollIndicator> */}
       <ContactMethod></ContactMethod>
-      <main id="fullpage" className="bg-[--navy] px-[150px] text-[--slate]">
+      <main
+        id="fullpage"
+        className="bg-[--navy] px-6 md:px-20 lg:px-[150px] 2xl:px-[350px] text-[--slate]"
+      >
         <section
           id="Greeting"
           className="vertical-scrolling"
@@ -42,18 +53,19 @@ export default function Landing() {
         >
           <Banner />
         </section>
-        <section id="About" className="vertical-scrolling">
+        <SectionWrapper id="About">
           <AboutMe />
-        </section>
-        <section id="Experience" className="vertical-scrolling">
+        </SectionWrapper>
+        <SectionWrapper id="Experience">
           <Experience />
-        </section>
-        <section id="Works" className="vertical-scrolling">
+        </SectionWrapper>
+        <SectionWrapper id="Works">
           <MyBlog />
-        </section>
-        <section id="Skills" className="vertical-scrolling">
+        </SectionWrapper>
+        <SectionWrapper id="Skills">
           <MySkill />
-        </section>
+        </SectionWrapper>
+
         <section id="Contact" className="vertical-scrolling">
           <Footer />
         </section>

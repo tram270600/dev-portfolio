@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { useCallback, useState } from "react";
+import "./Experience.scss";
 
 const EXPERIENCE_SECTION = {
   GOT_IT: "got-it",
@@ -67,17 +68,20 @@ export default function Experience() {
   );
 
   return (
-    <div className="h-screen flex flex-col justify-start items-start pt-24">
+    <>
       <h2 className="titleSection">My experiences</h2>
-      <div className="flex px-8">
-        <div className="flex flex-col pr-5">
+      <div className="flex flex-col md:flex-row px-0 md:px-8 max-w-full">
+        <div
+          id="companyList"
+          className="companyList flex md:flex-col pr-5 max-w-full overflow-x-scroll md:overflow-visible"
+        >
           {experienceData.map((experience, index) => (
             <button
               key={experience.companyName}
               className={classNames(
-                "px-5 py-2 border-l hover:bg-[--light-navy] whitespace-nowrap",
+                "px-5 py-2 border-b md:border-l md:border-b-0 hover:bg-[--light-navy] whitespace-nowrap",
                 selectedCompanyIndex === index
-                  ? "text-[--green] border-l-[--green]"
+                  ? "text-[--green] border-b-[--green] lg:border-l-[--green]"
                   : "border-l-[--lightest-navy]"
               )}
               onClick={() => handleSelectCompany(index)}
@@ -100,6 +104,6 @@ export default function Experience() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

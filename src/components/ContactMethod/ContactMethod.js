@@ -29,7 +29,7 @@ export default function ContactMethod() {
   };
   return (
     <>
-      <ul className="contact-method__boundary">
+      <ul className="contact-method__boundary hidden lg:flex flex-col fixed left-8 bottom-0 gap-6">
         {contactNames.map((contactName, index) => (
           <li className="contact-method__component" key={index}>
             {contactName === "Gmail" ? (
