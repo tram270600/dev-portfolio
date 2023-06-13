@@ -41,7 +41,7 @@ const experienceData = [
     skills: ["ReactJs", "Typescript", "HTML", "CSS", "Javascript"],
   },
   {
-    title: "Front-end developer",
+    title: "Software developer",
     id: EXPERIENCE_SECTION.JH,
     companyName: "Journey Horizon",
     time: "2020 - 2021",
