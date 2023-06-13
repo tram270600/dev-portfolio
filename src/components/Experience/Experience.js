@@ -79,7 +79,7 @@ export default function Experience() {
             <button
               key={experience.companyName}
               className={classNames(
-                "px-5 py-2 border-b md:border-l md:border-b-0 hover:bg-[--light-navy] whitespace-nowrap",
+                "hover mb-1 px-5 py-2 border-b md:border-l md:border-b-0 hover:bg-[--light-navy] whitespace-nowrap",
                 selectedCompanyIndex === index
                   ? "text-[--green] border-b-[--green] lg:border-l-[--green]"
                   : "border-l-[--lightest-navy]"
