@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import fullpage from "fullpage.js";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer/Footer.js";
 import Banner from "components/Banner/Banner.js";
@@ -9,7 +10,7 @@ import MyBlog from "components/MyBlog/MyBlog";
 import MySkill from "components/MySkill/MySkill";
 import ContactMethod from "components/ContactMethod/ContactMethod";
 import ContactMethodFooter from "components/ContactMethod/ContactMethodFooter";
-import fullpage from "fullpage.js";
+import RotateSquare from "components/RotateSquare/RotateSquare";
 import "./Landing.scss";
 
 const SectionWrapper = ({ id, children }) => {
@@ -46,13 +47,14 @@ export default function Landing() {
       <ContactMethod />
       <main
         id="fullpage"
-        className="bg-[--navy] px-6 md:px-20 lg:px-[150px] 2xl:px-[350px] text-[--slate]"
+        className="px-6 md:px-20 lg:px-[200px] 2xl:px-[350px] text-[--slate]"
       >
         <section
           id="Greeting"
           className="vertical-scrolling"
           data-anchor="Greeting"
         >
+          <RotateSquare />
           <Banner />
         </section>
         <SectionWrapper id="About">
