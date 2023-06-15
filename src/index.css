@@ -33,6 +33,10 @@ body {
   background-color: var(--navy);
 }
 
+* {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
