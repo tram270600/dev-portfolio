@@ -1,5 +1,12 @@
 @import "../styles/colors.scss";
 
+#canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
 .fp-licence {
   display: none;
 }
@@ -8,7 +15,7 @@
   position: fixed;
   right: 32px;
   top: 50%;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 32px;
   z-index: 5;
@@ -92,4 +99,20 @@
 
 .fp-watermark {
   display: none;
+}
+
+#fp-nav .fp-sr-only {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  #fp-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #fp-nav .fp-sr-only {
+    display: inline;
+  }
 }
