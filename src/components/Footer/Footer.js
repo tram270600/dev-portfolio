@@ -64,9 +64,9 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="relative h-screen flex flex-col justify-center items-start">
+    <footer className="h-screen flex flex-col items-start justify-around">
+      <hr className="horizontal-line" />
       <div>
-        <hr className="horizontal-line" />
         <div className="section">
           <div className="timeLocation">
             <div>It&apos;s {timeString} </div>
