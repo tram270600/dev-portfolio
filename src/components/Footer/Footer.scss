@@ -1,16 +1,84 @@
 @import "../../styles/colors.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lora:wght@500&family=Tilt+Prism&display=swap");
 footer {
-    background-color: var(--navy-500);
-    color: var(--light-slate);
+  background-color: var(--navy-500);
+  color: var(--light-slate);
 }
 
 .horizontal-line {
-    width: 80vw;
-    margin: auto;
-    color: var(--dark-slate);
+  width: 80vw;
+  margin: auto;
+  border: 1px solid var(--dark-slate);
 }
 
 .about-me {
-    border-bottom: 3px solid var(--green-500);
+  border-bottom: 3px solid var(--green-500);
+}
+
+.footer-content {
+  margin: 24px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.timeLocation {
+  flex: 3;
+  @include fontStyle(200, 96px, 1.2);
+  color: var(--dark-slate);
+  font-family: "Tilt Prism", cursive;
+}
+
+.weatherLocation {
+  @include fontStyle(200, 72px, 1.2);
+  color: var(--dark-slate);
+  font-family: "Anton", sans-serif;
+}
+
+.section {
+  display: flex;
+}
+
+.summaryInfo {
+  flex: 1;
+  padding: 32px;
+
+  h3 {
+    @include fontStyle(600, 24px, 1.5);
+    color: var(--light-slate);
+    margin-bottom: 32px;
+  }
+}
+
+.summaryInfoSection__header {
+  @include fontStyle(700, 20px, 1.5);
+  color: var(--dark-slate);
+  margin-bottom: 20px;
+}
+
+.summaryInfoSection__content {
+  p {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  p:before {
+    content: attr(length-info);
+    position: absolute;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--green-500);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: transparent;
+  }
+  p:hover:before {
+    visibility: visible;
+    opacity: 1;
+  }
+  p:hover {
+    color: var(--lighest-slate);
+  }
 }

@@ -30,14 +30,7 @@ export default function Landing() {
       sectionSelector: ".vertical-scrolling",
       navigation: true,
       parallax: true,
-      anchors: [
-        "00.Greeting",
-        "01.About",
-        "02.Experience",
-        "03.Works",
-        "04.Skills",
-        "05.Contact",
-      ],
+      anchors: ["Greeting", "About", "Experience", "Works", "Skills", "Contact"],
       scrollingSpeed: 700,
     });
   }, []);
