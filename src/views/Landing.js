@@ -9,7 +9,6 @@ import Experience from "components/Experience/Experience.js";
 import MyBlog from "components/MyBlog/MyBlog";
 import MySkill from "components/MySkill/MySkill";
 import ContactMethod from "components/ContactMethod/ContactMethod";
-import ContactMethodFooter from "components/ContactMethod/ContactMethodFooter";
 import RotateSquare from "components/RotateSquare/RotateSquare";
 import "./Landing.scss";
 
@@ -66,9 +65,7 @@ export default function Landing() {
           <MySkill />
         </SectionWrapper>
 
-        <section className="vertical-scrolling pb-8">
-          <ContactMethodFooter />
-
+        <section className="vertical-scrolling pb-24">
           <Footer />
         </section>
       </main>

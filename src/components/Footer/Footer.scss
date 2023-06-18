@@ -7,7 +7,6 @@ footer {
 }
 
 .horizontal-line {
-  width: 80vw;
   margin: auto;
   border: 1px solid var(--dark-slate);
 }
@@ -17,32 +16,27 @@ footer {
 }
 
 .footer-content {
-  margin: 24px;
   display: flex;
-  gap: 50px;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .timeLocation {
   flex: 3;
-  @include fontStyle(200, 96px, 1.2);
+  @include fontStyle(200, 64px, 1.2);
   color: var(--dark-slate);
   font-family: "Tilt Prism", cursive;
 }
 
 .weatherLocation {
-  @include fontStyle(200, 72px, 1.2);
+  @include fontStyle(200, 40px, 1.2);
   color: var(--dark-slate);
   font-family: "Anton", sans-serif;
 }
 
-.section {
-  display: flex;
-}
-
 .summaryInfo {
   flex: 1;
-  padding: 32px;
+  padding: 32px 0px;
 
   h3 {
     @include fontStyle(600, 24px, 1.5);
@@ -63,7 +57,7 @@ footer {
     margin-bottom: 12px;
   }
   p:before {
-    content: attr(length-info);
+    content: attr(data-length-info);
     position: absolute;
     height: 3px;
     bottom: -2px;
@@ -80,5 +74,70 @@ footer {
   }
   p:hover {
     color: var(--lighest-slate);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #fp-nav {
+    display: flex;
+  }
+
+  .footer-content {
+    margin: 24px;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .timeLocation {
+    @include fontStyle(200, 80px, 1.2);
+    color: var(--dark-slate);
+    font-family: "Tilt Prism", cursive;
+  }
+
+  .weatherLocation {
+    @include fontStyle(200, 72px, 1.2);
+    color: var(--dark-slate);
+    font-family: "Anton", sans-serif;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 24px;
+  }
+
+  .section {
+    display: flex;
+  }
+
+  .footer-content {
+    margin: 24px;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .summaryInfo {
+    flex: 1;
+    padding: 32px;
+
+    h3 {
+      @include fontStyle(600, 24px, 1.5);
+      color: var(--light-slate);
+      margin-bottom: 32px;
+    }
+  }
+
+  .timeLocation {
+    @include fontStyle(200, 80px, 1.2);
+    color: var(--dark-slate);
+    font-family: "Tilt Prism", cursive;
+  }
+
+  .weatherLocation {
+    @include fontStyle(200, 72px, 1.2);
+    color: var(--dark-slate);
+    font-family: "Anton", sans-serif;
   }
 }
