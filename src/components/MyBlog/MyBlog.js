@@ -27,7 +27,7 @@ export default function MyBlog() {
 
   return (
     <div className="h-screen flex flex-col justify-start items-start pt-24 w-full">
-      <h2 className="titleSection">Pieces I've written</h2>
+      <h2 className="titleSection">Pieces I&apos;ve written</h2>
       <a
         ref={cardRef}
         onMouseEnter={handleMouseEnter}
@@ -50,7 +50,8 @@ export default function MyBlog() {
           Build a color picker Chrome extension in 10 minutes
         </h3>
         <p className="">
-          A simple tutorial on how to create a color picker Chrome's extension
+          A simple tutorial on how to create a color picker Chrome&apos;s
+          extension
         </p>
         <span className="text-xs">
           *note: You have to fake ip in order to access Medium

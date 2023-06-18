@@ -14,13 +14,13 @@ export default function AboutMe() {
           </p>
           <p>
             I have three years of experience in front-end development. I am
-            confident that I have deep knowledge of necessary languages ​​and
+            confident that I have deep knowledge of necessary languages and
             technologies for Front-end.
           </p>
           <p>
-            I'm willing to learn new things, and not afraid of complex tasks. I
-            always try to read and stay up to date with the latest technology
-            news.
+            I&apos;m willing to learn new things, and not afraid of complex
+            tasks. I always try to read and stay up to date with the latest
+            technology news.
           </p>
         </div>
         <div className="relative">

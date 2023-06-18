@@ -1,8 +1,8 @@
 import React from "react";
 import "./Button.scss";
 
-export default function Button(props, handleOnClick) {
-  const { textBtn, colorBtn, iconBtn } = props;
+export default function Button(props) {
+  const { textBtn } = props;
   return (
     <>
       <button className="custom-btn" onClick={() => console.log("Click")}>
