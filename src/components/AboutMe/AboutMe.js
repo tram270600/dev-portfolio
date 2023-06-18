@@ -1,4 +1,5 @@
 import MyImg from "assets/my-img.jpg";
+import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
@@ -23,13 +24,20 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="relative">
-          <div className="absolute border-4 rounded-sm border-[--green] top-4 left-4 h-40 md:h-[600px] lg:h-[300px] min-w-[100%] lg:min-w-[210px]"></div>
           <div
-            className="relative bg-center bg-cover rounded-sm h-40 md:h-[600px] lg:h-[300px] min-w-[100px] min-w-[210px]"
+            className="absolute border-4 rounded-sm border-[--green] h-40 bottom-0 md:h-[600px] lg:h-[300px] lg:min-w-[210px]"
             style={{
-              backgroundImage: `url(${MyImg})`,
+              minWidth: "calc(100% - 20px)",
             }}
           ></div>
+          <div className="d-1">
+            <div
+              className="relative bg-center bg-cover rounded-sm h-40 md:h-[600px] lg:h-[300px] min-w-[210px] "
+              style={{
+                backgroundImage: `url(${MyImg})`,
+              }}
+            ></div>
+          </div>
           <div className=""></div>
         </div>
       </div>

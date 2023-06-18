@@ -30,7 +30,14 @@ export default function Landing() {
       sectionSelector: ".vertical-scrolling",
       navigation: true,
       parallax: true,
-      anchors: ["Greeting", "About", "Experience", "Works", "Skills", "Contact"],
+      anchors: [
+        "Greeting",
+        "About",
+        "Experience",
+        "Works",
+        "Skills",
+        "Contact",
+      ],
       scrollingSpeed: 700,
     });
   }, []);
@@ -42,24 +49,20 @@ export default function Landing() {
         id="fullpage"
         className="px-6 md:px-20 lg:px-[200px] 2xl:px-[350px] text-[--slate]"
       >
-        <section
-          id="Greeting"
-          className="vertical-scrolling"
-          data-anchor="Greeting"
-        >
+        <section className="vertical-scrolling">
           <RotateSquare />
           <Banner />
         </section>
-        <SectionWrapper id="About">
+        <SectionWrapper>
           <AboutMe />
         </SectionWrapper>
-        <SectionWrapper id="Experience">
+        <SectionWrapper>
           <Experience />
         </SectionWrapper>
-        <SectionWrapper id="Works">
+        <SectionWrapper>
           <MyBlog />
         </SectionWrapper>
-        <SectionWrapper id="Skills">
+        <SectionWrapper>
           <MySkill />
         </SectionWrapper>
 
