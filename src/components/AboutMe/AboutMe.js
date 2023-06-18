@@ -2,9 +2,9 @@ import MyImg from "assets/my-img.jpg";
 
 export default function AboutMe() {
   return (
-    <div className="h-screen flex flex-col justify-start items-start pt-24">
+    <>
       <h2 className="titleSection">About me</h2>
-      <div className="flex gap-12">
+      <div className="flex gap-12 flex-col lg:flex-row">
         <div className="flex flex-col gap-2.5">
           <p>
             Hello! My name is Dat. I was born in 1998 in Nha Trang City, a
@@ -23,24 +23,16 @@ export default function AboutMe() {
           </p>
         </div>
         <div className="relative">
+          <div className="absolute border-4 rounded-sm border-[--green] top-4 left-4 h-40 md:h-[600px] lg:h-[300px] min-w-[100%] lg:min-w-[210px]"></div>
           <div
-            className="absolute border-4 rounded-sm border-[--green] top-4 left-4"
+            className="relative bg-center bg-cover rounded-sm h-40 md:h-[600px] lg:h-[300px] min-w-[100px] min-w-[210px]"
             style={{
-              minWidth: "210px",
-              height: "300px",
-            }}
-          ></div>
-          <div
-            className="relative bg-center bg-cover rounded-sm"
-            style={{
-              minWidth: "210px",
-              height: "300px",
               backgroundImage: `url(${MyImg})`,
             }}
           ></div>
           <div className=""></div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
