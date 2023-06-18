@@ -66,7 +66,7 @@ export default function Landing() {
           <MySkill />
         </SectionWrapper>
 
-        <section id="Contact" className="vertical-scrolling pb-8">
+        <section className="vertical-scrolling pb-8">
           <ContactMethodFooter />
 
           <Footer />
