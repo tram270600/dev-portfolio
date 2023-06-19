@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import fullpage from "fullpage.js";
-import Navbar from "sections/Navbar.js";
+import Navbar from "sections/Navbar/Navbar.js";
 import Footer from "sections/Footer/Footer.js";
 import Banner from "sections/Banner/Banner.js";
 import AboutMe from "sections/AboutMe/AboutMe.js";
@@ -10,6 +10,7 @@ import MyBlog from "sections/MyBlog/MyBlog";
 import MySkill from "sections/MySkill/MySkill";
 import ContactMethod from "sections/ContactMethod/ContactMethod";
 import RotateSquare from "components/RotateSquare/RotateSquare";
+import { AnchorDataList } from "utils";
 import "./Landing.scss";
 
 const SectionWrapper = ({ id, children }) => {
@@ -29,20 +30,13 @@ export default function Landing() {
       sectionSelector: ".vertical-scrolling",
       navigation: true,
       parallax: true,
-      anchors: [
-        "Greeting",
-        "About",
-        "Experience",
-        "Works",
-        "Skills",
-        "Contact",
-      ],
+      anchors: AnchorDataList,
       scrollingSpeed: 700,
     });
   }, []);
   return (
-    <>
-      <Navbar transparent />
+    <div className="container">
+      <Navbar />
       <ContactMethod />
       <main
         id="fullpage"
@@ -69,6 +63,6 @@ export default function Landing() {
           <Footer />
         </section>
       </main>
-    </>
+    </div>
   );
 }
