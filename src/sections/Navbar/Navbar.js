@@ -4,7 +4,7 @@ import CVButton from "components/CVButton/CVButton";
 import { AnchorDataList } from "utils";
 import "./Navbar.scss";
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   const getMenuItem = (id) => (
