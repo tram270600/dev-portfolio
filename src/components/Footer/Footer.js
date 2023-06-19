@@ -64,7 +64,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="h-screen flex flex-col items-start justify-around">
+    <footer className="pt-16 pb-4 lg:pt-0 lg:pb-4 h-screen flex flex-col items-start justify-around">
       <hr className="horizontal-line" />
       <div>
         <div className="section">

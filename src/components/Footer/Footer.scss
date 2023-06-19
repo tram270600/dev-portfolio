@@ -5,6 +5,8 @@ footer {
   background-color: var(--navy-500);
   color: var(--light-slate);
   justify-content: space-around;
+
+  // height: calc(100vh - 64px);
 }
 
 .horizontal-line {
@@ -24,25 +26,25 @@ footer {
 
 .timeLocation {
   flex: 3;
-  @include fontStyle(200, 64px, 1.2);
+  @include fontStyle(200, 24px, 1.2);
   color: var(--dark-slate);
   font-family: "Tilt Prism", cursive;
 }
 
 .weatherLocation {
-  @include fontStyle(200, 40px, 1.2);
+  @include fontStyle(200, 32px, 1.2);
   color: var(--dark-slate);
   font-family: "Anton", sans-serif;
 }
 
 .summaryInfo {
   flex: 1;
-  padding: 32px 0px;
+  padding: 12px 0px;
 
   h3 {
     @include fontStyle(600, 24px, 1.5);
     color: var(--light-slate);
-    margin-bottom: 32px;
+    margin-bottom: 12px;
   }
 }
 
@@ -86,16 +88,18 @@ footer {
     align-items: center;
   }
 
+  .summaryInfo {
+    h3 {
+      margin-bottom: 32px;
+    }
+  }
+
   .timeLocation {
-    @include fontStyle(200, 80px, 1.2);
-    color: var(--dark-slate);
-    font-family: "Tilt Prism", cursive;
+    font-size: 28px;
   }
 
   .weatherLocation {
-    @include fontStyle(200, 72px, 1.2);
-    color: var(--dark-slate);
-    font-family: "Anton", sans-serif;
+    font-size: 28px;
   }
 }
 
@@ -108,33 +112,29 @@ footer {
     display: flex;
   }
 
-  .footer-content {
-    margin: 24px;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-  }
-
   .summaryInfo {
-    flex: 1;
     padding: 32px;
 
     h3 {
-      @include fontStyle(600, 24px, 1.5);
-      color: var(--light-slate);
       margin-bottom: 32px;
     }
   }
 
   .timeLocation {
-    @include fontStyle(200, 80px, 1.2);
-    color: var(--dark-slate);
-    font-family: "Tilt Prism", cursive;
+    font-size: 36px;
   }
 
   .weatherLocation {
-    @include fontStyle(200, 72px, 1.2);
-    color: var(--dark-slate);
-    font-family: "Anton", sans-serif;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .timeLocation {
+    font-size: 80px;
+  }
+
+  .weatherLocation {
+    font-size: 72px;
   }
 }
