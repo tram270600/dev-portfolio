@@ -8,7 +8,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   const getMenuItem = (id) => (
-    <li>
+    <li key={id}>
       <a href={`#${id}`} onClick={() => setNavbarOpen(false)}>
         {id}
       </a>
