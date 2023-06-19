@@ -17,7 +17,7 @@ import "./Landing.scss";
 const SectionWrapper = ({ id, children }) => {
   return (
     <section id={id} className="vertical-scrolling">
-      <div className="h-screen flex flex-col items-start justify-center">
+      <div className="pt-16 md:pt-0 h-screen flex flex-col items-start justify-center">
         {children}
       </div>
     </section>
