@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import "./Footer.scss";
-import Button from "components/Button/Button";
+import CVButton from "components/CVButton/CVButton";
 import { useEffect, useState } from "react";
 
 const ONE_MINUTE = 1000 * 60;
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-content">
-          <Button textBtn="Download my CV" colorBtn="green"></Button>
+          <CVButton />
           <div>
             © {new Date().getFullYear()}, designed and built by{" "}
             <a className="about-me" href="#About">
