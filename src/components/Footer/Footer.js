@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import "./Footer.scss";
 import CVButton from "components/CVButton/CVButton";
+import ContactMethodFooter from "components/ContactMethod/ContactMethodFooter";
 import { useEffect, useState } from "react";
 
 const ONE_MINUTE = 1000 * 60;
@@ -15,6 +16,11 @@ export default function Footer() {
   const date = useMemo(() => new Date(currentTime), [currentTime]);
   const hours = date.getHours();
   const minutes = date.getMinutes();
+  const personalInfo = {
+    address: "District 8, HCM City, Vietnam",
+    phone: "(+84) 34 324 46 44",
+    email: "nguyenquocdat2511998@gmail.com",
+  };
 
   const timeString = useMemo(() => {
     let rs = "";
@@ -58,9 +64,9 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="h-screen flex flex-col justify-start items-start pt-24">
+    <footer className="pt-16 pb-4 lg:pt-0 lg:pb-4 h-screen flex flex-col items-start justify-around">
+      <hr className="horizontal-line" />
       <div>
-        <hr className="horizontal-line" />
         <div className="section">
           <div className="timeLocation">
             <div>It&apos;s {timeString} </div>
@@ -77,9 +83,15 @@ export default function Footer() {
             <div className="summaryInfoSection">
               <div className="summaryInfoSection__header">Contact Info</div>
               <div className="summaryInfoSection__content">
-                <p>District 8, HCM City, Vietnam</p>
-                <p>(+84) 34 324 46 44</p>
-                <p>nguyenquocdat2511998@gmail.com</p>
+                <p data-length-info={personalInfo.address}>
+                  {personalInfo.address}
+                </p>
+                <p data-length-info={personalInfo.phone}>
+                  {personalInfo.phone}
+                </p>
+                <p data-length-info={personalInfo.email}>
+                  {personalInfo.email}
+                </p>
               </div>
             </div>
           </div>
@@ -94,6 +106,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <ContactMethodFooter />
     </footer>
   );
 }
