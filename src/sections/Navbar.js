@@ -1,5 +1,5 @@
 import React from "react";
-import CVButton from "./CVButton/CVButton";
+import CVButton from "../components/CVButton/CVButton";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);

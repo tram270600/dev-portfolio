@@ -1,14 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
 import fullpage from "fullpage.js";
-import Navbar from "components/Navbar.js";
-import Footer from "components/Footer/Footer.js";
-import Banner from "components/Banner/Banner.js";
-import AboutMe from "components/AboutMe/AboutMe.js";
-import Experience from "components/Experience/Experience.js";
-import MyBlog from "components/MyBlog/MyBlog";
-import MySkill from "components/MySkill/MySkill";
-import ContactMethod from "components/ContactMethod/ContactMethod";
+import Navbar from "sections/Navbar.js";
+import Footer from "sections/Footer/Footer.js";
+import Banner from "sections/Banner/Banner.js";
+import AboutMe from "sections/AboutMe/AboutMe.js";
+import Experience from "sections/Experience/Experience.js";
+import MyBlog from "sections/MyBlog/MyBlog";
+import MySkill from "sections/MySkill/MySkill";
+import ContactMethod from "sections/ContactMethod/ContactMethod";
 import RotateSquare from "components/RotateSquare/RotateSquare";
 import "./Landing.scss";
 

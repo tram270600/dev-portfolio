@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import "./Footer.scss";
 import CVButton from "components/CVButton/CVButton";
-import ContactMethodFooter from "components/ContactMethod/ContactMethodFooter";
+import ContactMethodFooter from "sections/ContactMethod/ContactMethodFooter";
 import { useEffect, useState } from "react";
 
 const ONE_MINUTE = 1000 * 60;
