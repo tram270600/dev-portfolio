@@ -6,7 +6,7 @@ export default function AboutMe() {
     <>
       <h2 className="titleSection">About me</h2>
       <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-2 md:gap-2.5">
           <p>
             Hello! My name is Dat. I was born in 1998 in Nha Trang City, a
             stunning beach. I studied and graduated with a software engineering

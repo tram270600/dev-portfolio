@@ -26,37 +26,39 @@ export default function MyBlog() {
   useEffect(() => {}, []);
 
   return (
-    <div className="h-screen flex flex-col justify-start items-start pt-24 w-full">
+    <div className="h-screen flex flex-col justify-center items-start w-full">
       <h2 className="titleSection">Pieces I&apos;ve written</h2>
-      <a
-        ref={cardRef}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        href="https://link.medium.com/rwDvkDP57xb"
-        className="w-full bg-[--light-navy] p-6 rounded-md shadow-xl shadow-[--lightest-navy]"
-        style={{
-          transition: "transform 0.1s ease",
-          transformStyle: "preserve-3d",
-          willChange: "transform",
-        }}
-      >
-        <div
-          className="bg-cover h-[300px] mb-4"
+      <div className="flex justify-center w-full">
+        <a
+          ref={cardRef}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          href="https://link.medium.com/rwDvkDP57xb"
+          className="w-full bg-[--light-navy] p-6 rounded-md shadow-xl shadow-[--lightest-navy]"
           style={{
-            backgroundImage: `url(${blog1Bg})`,
+            transition: "transform 0.1s ease",
+            transformStyle: "preserve-3d",
+            willChange: "transform",
           }}
-        />
-        <h3 className="text-[--green]">
-          Build a color picker Chrome extension in 10 minutes
-        </h3>
-        <p className="">
-          A simple tutorial on how to create a color picker Chrome&apos;s
-          extension
-        </p>
-        <span className="text-xs">
-          *note: You have to fake ip in order to access Medium
-        </span>
-      </a>
+        >
+          <div
+            className="bg-cover h-[300px] mb-4"
+            style={{
+              backgroundImage: `url(${blog1Bg})`,
+            }}
+          />
+          <h3 className="text-[--green]">
+            Build a color picker Chrome extension in 10 minutes
+          </h3>
+          <p className="">
+            A simple tutorial on how to create a color picker Chrome&apos;s
+            extension
+          </p>
+          <span className="text-xs">
+            *note: You have to fake ip in order to access Medium
+          </span>
+        </a>
+      </div>
     </div>
   );
 }

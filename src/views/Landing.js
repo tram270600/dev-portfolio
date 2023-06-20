@@ -11,6 +11,7 @@ import MySkill from "sections/MySkill/MySkill";
 import ContactMethod from "sections/ContactMethod/ContactMethod";
 import RotateSquare from "components/RotateSquare/RotateSquare";
 import GlowingMouse from "components/GlowingMouse/GlowingMouse";
+import FadedSection from "components/FadedSection/FadedSection";
 import { AnchorDataList } from "utils";
 import "./Landing.scss";
 
@@ -18,7 +19,7 @@ const SectionWrapper = ({ id, children }) => {
   return (
     <section id={id} className="vertical-scrolling">
       <div className="pt-16 md:pt-0 h-screen flex flex-col items-start justify-center">
-        {children}
+        <FadedSection>{children}</FadedSection>
       </div>
     </section>
   );
@@ -32,39 +33,44 @@ export default function Landing() {
       navigation: true,
       parallax: true,
       anchors: AnchorDataList,
-      scrollingSpeed: 700,
+      scrollingSpeed: 500,
+      scrollOverflow: false,
     });
   }, []);
   return (
-    <div className="container">
+    <>
       <GlowingMouse />
-      <Navbar />
-      <ContactMethod />
-      <main
-        id="fullpage"
-        className="px-6 md:px-20 lg:px-[200px] 2xl:px-[350px] text-[--slate]"
-      >
-        <section className="vertical-scrolling">
-          <RotateSquare />
-          <Banner />
-        </section>
-        <SectionWrapper>
-          <AboutMe />
-        </SectionWrapper>
-        <SectionWrapper>
-          <Experience />
-        </SectionWrapper>
-        <SectionWrapper>
-          <MyBlog />
-        </SectionWrapper>
-        <SectionWrapper>
-          <MySkill />
-        </SectionWrapper>
+      <div>
+        <Navbar />
+        <ContactMethod />
+        <main
+          id="fullpage"
+          className="container px-6 md:px-20 lg:px-[200px] 2xl:px-[350px] text-[--slate] mx-auto"
+        >
+          <section className="vertical-scrolling">
+            <RotateSquare />
+            <FadedSection>
+              <Banner />
+            </FadedSection>
+          </section>
+          <SectionWrapper>
+            <AboutMe />
+          </SectionWrapper>
+          <SectionWrapper>
+            <Experience />
+          </SectionWrapper>
+          <SectionWrapper>
+            <MyBlog />
+          </SectionWrapper>
+          <SectionWrapper>
+            <MySkill />
+          </SectionWrapper>
 
-        <section className="vertical-scrolling pb-24">
-          <Footer />
-        </section>
-      </main>
-    </div>
+          <section className="vertical-scrolling pb-24">
+            <Footer />
+          </section>
+        </main>
+      </div>
+    </>
   );
 }
