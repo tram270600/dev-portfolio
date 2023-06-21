@@ -12,6 +12,7 @@ import ContactMethod from "sections/ContactMethod/ContactMethod";
 import RotateSquare from "components/RotateSquare/RotateSquare";
 import GlowingMouse from "components/GlowingMouse/GlowingMouse";
 import FadedSection from "components/FadedSection/FadedSection";
+import PreloadBackground from "components/PreloadBackground/PreloadBackground";
 import { AnchorDataList } from "utils";
 import "./Landing.scss";
 
@@ -39,6 +40,7 @@ export default function Landing() {
   }, []);
   return (
     <>
+      <PreloadBackground />
       <GlowingMouse />
       <div>
         <Navbar />
