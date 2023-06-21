@@ -26,7 +26,7 @@ footer {
 
 .timeLocation {
   flex: 3;
-  @include fontStyle(200, 24px, 1.2);
+  @include fontStyle(200, 48px, 1.2);
   color: var(--dark-slate);
   font-family: "Tilt Prism", cursive;
 }
@@ -42,7 +42,7 @@ footer {
   padding: 12px 0px;
 
   h3 {
-    @include fontStyle(600, 24px, 1.5);
+    @include fontStyle(600, 20px, 1.5);
     color: var(--light-slate);
     margin-bottom: 12px;
   }
