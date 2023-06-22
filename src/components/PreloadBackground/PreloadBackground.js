@@ -1,16 +1,17 @@
 import { useEffect } from "react";
 import "./PreloadBackground.css";
+import DLogo from "assets/logo/DLogo.svg";
 
 export default function PreloadBackground() {
   useEffect(() => {
     setTimeout(() => {
       document.querySelector(".preloadWrapper").classList.add("hidden");
-    }, 3900);
+    }, 3450);
   }, []);
 
   return (
     <div className="preloadWrapper flex justify-center items-center w-screen h-screen bg-[--navy] z-[999] relative">
-      <span className="preloard text-[--green] bold text-9xl">D</span>
+      <img src={DLogo} className="preloard" width={100} height={100} />
     </div>
   );
 }
