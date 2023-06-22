@@ -10,14 +10,15 @@ export default function MySkill() {
     "Problem Solving",
   ];
   const technologies = [
-    "HTML",
-    "CSS",
+    "ReactJS",
+    "HTML, CSS",
     "JavaScript",
     "TypeScript",
+    "Jest",
+    "Cypress",
     "VueJS",
     "Git",
     "Tailwind",
-    "Boostrap",
   ];
   return (
     <>
@@ -25,7 +26,7 @@ export default function MySkill() {
       <span className="card__header">Technologies</span>
       <div className="card__container">
         {technologies.map((technology, index) => (
-          <div key={index} className="card">
+          <div key={index} className="card cursor-pointer">
             <span className="titleCard">{technology}</span>
             <div className="bar">
               <div className="emptybar"></div>
@@ -37,7 +38,7 @@ export default function MySkill() {
       <span className="card__header">Softskills</span>
       <div className="card__container">
         {softSkills.map((softSkill, index) => (
-          <div key={index} className="card">
+          <div key={index} className="card cursor-pointer">
             <span className="titleCard">{softSkill}</span>
             <div className="bar">
               <div className="emptybar"></div>
@@ -49,7 +50,7 @@ export default function MySkill() {
       <span className="card__header">Software/Platform</span>
       <div className="card__container">
         {softwareSkills.map((softwareSkill, index) => (
-          <div key={index} className="card">
+          <div key={index} className="card cursor-pointer">
             <span className="titleCard">{softwareSkill}</span>
             <div className="bar">
               <div className="emptybar"></div>

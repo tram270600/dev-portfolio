@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import CVButton from "components/CVButton/CVButton";
 import { AnchorDataList } from "utils";
+import DLogo from "assets/logo/DLogo.svg";
 import "./Navbar.scss";
 
 export default function Navbar() {
@@ -17,12 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-6 py-3">
-      <a
-        className="text-[--green] text-4xl leading-5 font-bold inline-block py-2 uppercase"
-        href="#"
-      >
-        D
-      </a>
+      <img src={DLogo} width={60} height={60} />
 
       <CVButton />
 

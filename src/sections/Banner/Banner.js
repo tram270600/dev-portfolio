@@ -8,7 +8,7 @@ export default function Banner() {
         Dat Nguyen
       </h2>
       <h2 className="text-[--slate] font-semibold text-4xl lg:text-7xl mb-6	">
-        I build things for the web.
+        I&apos;m a front-end developer.
       </h2>
       <p className="text-[--slate]">
         I’m a software engineer specializing in building (and occasionally
