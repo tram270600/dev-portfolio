@@ -83,15 +83,29 @@ export default function Footer() {
             <div className="summaryInfoSection">
               <div className="summaryInfoSection__header">Contact Info</div>
               <div className="summaryInfoSection__content">
-                <p data-length-info={personalInfo.address}>
-                  {personalInfo.address}
-                </p>
-                <p data-length-info={personalInfo.phone}>
-                  {personalInfo.phone}
-                </p>
-                <p data-length-info={personalInfo.email}>
-                  {personalInfo.email}
-                </p>
+                <a
+                  href="https://www.google.com/maps?q=Thành phố Hồ Chí Minh, Việt Nam"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p data-length-info={personalInfo.address}>
+                    {personalInfo.address}
+                  </p>
+                </a>
+                <a href="tel:0343244644">
+                  <p data-length-info={personalInfo.phone}>
+                    {personalInfo.phone}
+                  </p>
+                </a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguyenquocdat2511998@gmail.com "
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p data-length-info={personalInfo.email}>
+                    {personalInfo.email}
+                  </p>
+                </a>
               </div>
             </div>
           </div>

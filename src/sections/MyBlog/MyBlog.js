@@ -34,7 +34,7 @@ export default function MyBlog() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           href="https://link.medium.com/rwDvkDP57xb"
-          className="w-full bg-[--light-navy] p-6 rounded-md shadow-xl shadow-[--lightest-navy]"
+          className="w-full bg-[--light-navy] p-6 rounded-md shadow-xl hover:shadow-[--lightest-navy]"
           style={{
             transition: "transform 0.1s ease",
             transformStyle: "preserve-3d",

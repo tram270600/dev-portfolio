@@ -27,16 +27,16 @@ export default function Navbar(props) {
       >
         {triggerEffect ? (
           <div className="w-12 h-12">
-            <div className="logoEffect">
+            <a href="#Greeting" className="logoEffect">
               <LogoDot className="absolute firstDot dot-transform-animation" />
               <LogoOrigin className="absolute letter transform-animation" />
               <LogoDot className="absolute secondDot dot-transform-animation" />
-            </div>
+            </a>
           </div>
         ) : (
-          <div>
+          <a href="#Greeting">
             <Logo />
-          </div>
+          </a>
         )}
       </a>
       <CVButton />
