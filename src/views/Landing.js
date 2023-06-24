@@ -27,6 +27,7 @@ const SectionWrapper = ({ id, children }) => {
 };
 
 export default function Landing() {
+  const [applyAnimation, setApplyAnimation] = React.useState(false);
   useEffect(() => {
     new fullpage("#fullpage", {
       licenseKey: "gplv3-license",
@@ -36,6 +37,17 @@ export default function Landing() {
       anchors: AnchorDataList,
       scrollingSpeed: 500,
       scrollOverflow: false,
+      afterLoad: function (origin, destination) {
+        // var sectionIndex = destination.index; // get the index of the current section
+        // var sectionAnchor = destination.anchor; // get the anchor value for the current section
+        // do something with the isFirst and anchor values
+        if (destination.isFirst || destination.isLast) {
+          console.log("This is the first section.");
+          setApplyAnimation(true);
+        } else {
+          setApplyAnimation(false);
+        }
+      },
     });
   }, []);
   return (
@@ -43,7 +55,7 @@ export default function Landing() {
       <PreloadBackground />
       <GlowingMouse />
       <div>
-        <Navbar />
+        <Navbar triggerEffect={applyAnimation} />
         <ContactMethod />
         <main
           id="fullpage"

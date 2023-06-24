@@ -84,19 +84,85 @@
   transform-origin: left center;
 }
 
- .menuChecked span:nth-child(2),
- .menuChecked span:nth-child(5) {
-    transform: scale(0);
+.menuChecked span:nth-child(2),
+.menuChecked span:nth-child(5) {
+  transform: scale(0);
+}
+.menuChecked span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+.menuChecked span:nth-child(4) {
+  transform: translateY(12px) rotate(-45deg);
+}
+.menuChecked span:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+.menuChecked span:nth-child(6) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+// Logo Effect
+.logoEffect {
+  position: relative;
+  top: 6px;
+  left: 5px;
+}
+
+@keyframes transform-effect {
+  0% {
+    transform: rotate(0);
   }
- .menuChecked span:nth-child(1) {
-    transform: translateY(12px) rotate(45deg);
+  50% {
+    transform: rotate(90deg);
   }
- .menuChecked span:nth-child(4) {
-    transform: translateY(12px) rotate(-45deg);
+  100% {
+    transform: rotate(0);
   }
- .menuChecked span:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+}
+
+.transform-animation {
+  width: 32px;
+  height: 32px;
+  animation: transform-effect 3s;
+}
+
+@keyframes dot-transform-effect {
+  0% {
+    transform: translateX(0);
   }
- .menuChecked span:nth-child(6) {
-    transform: translateY(-12px) rotate(45deg);
+  50% {
+    transform: translate(12px, -22px);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.dot-transform-animation {
+  animation: dot-transform-effect 3s;
+}
+
+nav svg {
+  width: 48px;
+  height: 48px;
+}
+
+.firstDot,
+.secondDot {
+  width: 9.3px;
+  height: 9.3px;
+}
+
+.firstDot {
+  left: 2px;
+  top: 11px;
+}
+
+.secondDot {
+  left: 17px;
+  top: 11px;
+}
+
+.letter {
+  left: 10px;
+}

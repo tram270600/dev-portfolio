@@ -2,10 +2,13 @@ import React from "react";
 import classNames from "classnames";
 import CVButton from "components/CVButton/CVButton";
 import { AnchorDataList } from "utils";
-import DLogo from "assets/logo/DLogo.svg";
+import { ReactComponent as Logo } from "assets/logo/DDDLetterLogo.svg";
+import { ReactComponent as LogoOrigin } from "assets/logo/DLetterLogo.svg";
+import { ReactComponent as LogoDot } from "assets/logo/DDot.svg";
 import "./Navbar.scss";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const { triggerEffect } = props;
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   const getMenuItem = (id) => (
@@ -18,10 +21,25 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-6 py-3">
-      <img src={DLogo} width={60} height={60} />
-
+      <a
+        className="text-[--green] text-4xl leading-5 font-bold inline-block py-2 uppercase"
+        href="#"
+      >
+        {triggerEffect ? (
+          <div className="w-12 h-12">
+            <div className="logoEffect">
+              <LogoDot className="absolute firstDot dot-transform-animation" />
+              <LogoOrigin className="absolute letter transform-animation" />
+              <LogoDot className="absolute secondDot dot-transform-animation" />
+            </div>
+          </div>
+        ) : (
+          <div>
+            <Logo />
+          </div>
+        )}
+      </a>
       <CVButton />
-
       <div
         className={classNames(
           "wrapper text-white bg-[--light-navy]",
