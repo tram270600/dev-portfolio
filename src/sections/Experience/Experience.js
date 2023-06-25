@@ -20,8 +20,8 @@ const experienceData = [
     id: EXPERIENCE_SECTION.GOT_IT,
     companyName: "Got It Vietnam",
     time: "Nov-2022 - present",
-    p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
-    p2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    p1: "Participate in the development of the educational website system.",
+    p2: "The project I mainly work on is Studyboots. This is a whiteboard website. Students and professionals can interact directly by voice, chat, and drawing.",
     skills: [
       "ReactJs",
       "Typescript",

@@ -7,8 +7,7 @@ import { ReactComponent as LogoOrigin } from "assets/logo/DLetterLogo.svg";
 import { ReactComponent as LogoDot } from "assets/logo/DDot.svg";
 import "./Navbar.scss";
 
-export default function Navbar(props) {
-  const { triggerEffect } = props;
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   const getMenuItem = (id) => (
@@ -25,19 +24,13 @@ export default function Navbar(props) {
         className="text-[--green] text-4xl leading-5 font-bold inline-block py-2 uppercase"
         href="#"
       >
-        {triggerEffect ? (
-          <div className="w-12 h-12">
-            <a href="#Greeting" className="logoEffect">
-              <LogoDot className="absolute firstDot dot-transform-animation" />
-              <LogoOrigin className="absolute letter transform-animation" />
-              <LogoDot className="absolute secondDot dot-transform-animation" />
-            </a>
-          </div>
-        ) : (
-          <a href="#Greeting">
-            <Logo />
+        <div className="w-12 h-12">
+          <a href="#Greeting" className="logoEffect">
+            <LogoDot className="absolute firstDot dot-transform-animation" />
+            <LogoOrigin className="absolute letter transform-animation" />
+            <LogoDot className="absolute secondDot dot-transform-animation" />
           </a>
-        )}
+        </div>
       </a>
       <CVButton />
       <div
