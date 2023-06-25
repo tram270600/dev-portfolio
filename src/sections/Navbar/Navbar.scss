@@ -109,37 +109,32 @@
 }
 
 @keyframes transform-effect {
-  0% {
+  0%, 15%, 85%, 100% {
     transform: rotate(0);
   }
-  50% {
+
+  25%, 75% {
     transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(0);
   }
 }
 
 .transform-animation {
   width: 32px;
   height: 32px;
-  animation: transform-effect 3s;
+  animation: transform-effect 5s infinite;
 }
 
 @keyframes dot-transform-effect {
-  0% {
+  0%, 15%, 85%, 100% {
     transform: translateX(0);
   }
-  50% {
+  25%, 75% {
     transform: translate(12px, -22px);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
 .dot-transform-animation {
-  animation: dot-transform-effect 3s;
+  animation: dot-transform-effect 5s infinite;
 }
 
 nav svg {
