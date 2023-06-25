@@ -48,13 +48,12 @@ footer {
 .summaryInfoSection__header {
   @include fontStyle(700, 20px, 1.5);
   color: var(--dark-slate);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .summaryInfoSection__content {
   p {
     position: relative;
-    margin-bottom: 12px;
   }
   p:before {
     content: attr(data-length-info);
@@ -98,6 +97,12 @@ footer {
   .weatherLocation {
     font-size: 28px;
   }
+
+  .summaryInfoSection__content {
+  p {
+    margin-bottom: 12px;
+  }
+}
 }
 
 @media screen and (min-width: 1024px) {
