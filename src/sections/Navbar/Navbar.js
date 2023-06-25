@@ -2,7 +2,6 @@ import React from "react";
 import classNames from "classnames";
 import CVButton from "components/CVButton/CVButton";
 import { AnchorDataList } from "utils";
-import { ReactComponent as Logo } from "assets/logo/DDDLetterLogo.svg";
 import { ReactComponent as LogoOrigin } from "assets/logo/DLetterLogo.svg";
 import { ReactComponent as LogoDot } from "assets/logo/DDot.svg";
 import "./Navbar.scss";
