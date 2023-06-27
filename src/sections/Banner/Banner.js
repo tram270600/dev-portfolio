@@ -11,9 +11,8 @@ export default function Banner() {
         I&apos;m a front-end developer.
       </h2>
       <p className="text-[--slate]">
-        I’m a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I’m focused on
-        building accessible, human-centered products at Upstatement.
+        I&apos;m a front-end developer based in Ho Chi Minh City, Vietnam. I
+        have a passion for building things by code.
       </p>
     </div>
   );
