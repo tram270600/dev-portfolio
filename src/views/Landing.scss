@@ -91,6 +91,8 @@
   transform: rotate(0deg);
   transform: translateX(-14%) translateY(4px);
   transition: all 200ms ease;
+  // background-image: url(../assets/img/flower-fill.svg);
+  // background-size: cover;
 }
 
 #fp-nav a.active::before {
@@ -104,6 +106,12 @@
 
 #fp-nav .fp-sr-only {
   display: none;
+}
+
+body {
+  cursor: url('../assets/img/cursor-bold.svg'), auto;
+  // cursor: url('../assets/logo/DDot.svg'), auto;
+  // cursor: none;
 }
 
 @media screen and (min-width: 640px) {

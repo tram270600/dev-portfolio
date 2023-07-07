@@ -9,20 +9,27 @@
 .contact-method__boundary {
   z-index: 5;
   transition: transform 1s;
+  position: absolute;
+  top: 50%;
+  // transform: translate(-50%, -50%);
 }
 
-.vertical-line {
-  border-left: 3px solid var(--light-slate);
-  height: 90px;
-  margin-left: 50%;
-  bottom: 0;
-}
+// .vertical-line {
+//   border-left: 3px solid var(--light-slate);
+//   height: 90px;
+//   margin-left: 50%;
+//   bottom: 0;
+// }
 
 .contact-method__component a svg {
   stroke: var(--light-slate);
 }
 .contact-method__component a:hover svg {
   stroke: var(--green-500);
+}
+
+#behance:hover svg {
+  fill: var(--green-500);
 }
 
 .contact-method__component:hover {

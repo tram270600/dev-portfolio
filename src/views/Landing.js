@@ -5,6 +5,7 @@ import Navbar from "sections/Navbar/Navbar.js";
 import Footer from "sections/Footer/Footer.js";
 import Banner from "sections/Banner/Banner.js";
 import AboutMe from "sections/AboutMe/AboutMe.js";
+import Education from "sections/Education/Education";
 import Experience from "sections/Experience/Experience.js";
 import MyBlog from "sections/MyBlog/MyBlog";
 import MySkill from "sections/MySkill/MySkill";
@@ -60,6 +61,9 @@ export default function Landing() {
           </SectionWrapper>
           <SectionWrapper>
             <Experience />
+          </SectionWrapper>
+          <SectionWrapper>
+            <Education />
           </SectionWrapper>
           <SectionWrapper>
             <MyBlog />

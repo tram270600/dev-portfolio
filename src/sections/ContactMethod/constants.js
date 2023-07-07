@@ -1,6 +1,8 @@
-export const contactNames = ["Github", "LinkedIn", "Gmail"];
+export const contactNames = ["Github", "LinkedIn", "Gmail", "Instagram", "Behance"];
 export const contactLink = [
-  "https://github.com/NguyenDat251",
-  "https://www.linkedin.com/in/%C4%91%E1%BA%A1t-nguy%E1%BB%85n-a77ba518a/",
-  "nguyenquocdat2511998@gmail.com ",
+  "https://github.com/tram270600",
+  "https://www.linkedin.com/in/tram-nguyen-351a9a209/",
+  "ngntram.ityu@gmail.com",
+  "https://www.instagram.com/ubyii._",
+  "https://www.behance.net/tramnguyen2706"
 ];

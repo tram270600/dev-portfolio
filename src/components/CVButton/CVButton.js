@@ -2,7 +2,7 @@ import React from "react";
 import "./CVButton.scss";
 
 const CV_LINK =
-  "https://drive.google.com/file/d/1tXa2DAWR9SdmCGJs9r15P3yb1rfad_Px/view?usp=sharing";
+  "https://drive.google.com/file/d/1IHtnvY1x6lD60gQ5zzmuVpyPkpfxZR3z/view?usp=sharing";
 
 export default function CVButton() {
   return (

@@ -19,8 +19,10 @@ export default function GlowingMouse() {
     <div
       className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
       style={{
-        background: `radial-gradient(600px at ${currentMousePos.x}px ${currentMousePos.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        background: `radial-gradient(600px at ${currentMousePos.x}px ${currentMousePos.y}px, rgba(1, 248, 145, 0.15), transparent 80%)`,
       }}
-    ></div>
+    >
+    </div>
+  
   );
 }

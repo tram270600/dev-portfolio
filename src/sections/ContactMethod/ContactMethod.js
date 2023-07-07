@@ -29,7 +29,7 @@ export default function ContactMethod() {
             )}
           </li>
         ))}
-        <div className="vertical-line"></div>
+        {/* <div className="vertical-line"></div> */}
       </ul>
     </>
   );
