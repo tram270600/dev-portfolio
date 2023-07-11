@@ -1,7 +1,8 @@
 import classNames from "classnames";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./Education.scss";
 import Milestone from "components/Milestone/Milestone";
+import FloatingShape from "components/FloatingShape/FloatingShape";
 
 const EXPERIENCE_SECTION = {
   GOT_IT: "got-it",
@@ -54,14 +55,29 @@ const DescriptionItem = ({ content }) => (
 
 export default function Education() {
   const [selectedCompanyIndex, setSelectedCompanyIndex] = useState(0);
+  const [floatingShape, setFLoatingShape] = useState("flower");
 
   const handleSelectCompany = useCallback(
     (index) => setSelectedCompanyIndex(index),
     []
   );
 
+  useEffect(() => {
+    switch (selectedCompanyIndex) {
+      case 0:
+        setFLoatingShape('flower');
+        break;
+      case 1:
+        setFLoatingShape('leaf');
+        break;
+      default:
+        setFLoatingShape('butterfly');
+    }
+  }, [selectedCompanyIndex]);
+
   return (
     <>
+      <FloatingShape shape={floatingShape}></FloatingShape>
       <h2 className="titleSection">Education</h2>
       <div className="flex flex-col gap-4 px-0 md:px-8 max-w-full">
         <div
@@ -81,7 +97,9 @@ export default function Education() {
                 )}
                 onClick={() => handleSelectCompany(index)}
               >
-                <div className="text-[--lightest-slate] text-sm">{experience.range}</div>
+                <div className="text-[--lightest-slate] text-sm">
+                  {experience.range}
+                </div>
                 {experience.companyName}
               </button>
             </div>

@@ -1,63 +1,57 @@
-import { useCallback, useEffect, useRef } from "react";
-import blog1Bg from "assets/blog1_bg.webp";
-
-const THRESHOLD = 1;
+import FlipCard from "components/FlipCard/FlipCard";
+import "./MyBlog.scss";
 
 export default function MyBlog() {
-  const cardRef = useRef(null);
-
-  const handleMouseEnter = useCallback((e) => {
-    const { clientX, clientY, currentTarget } = e;
-    const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
-
-    const horizontal = (clientX - offsetLeft) / clientWidth;
-    const vertical = (clientY - offsetTop) / clientHeight;
-
-    const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-    const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
-
-    cardRef.current.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
-  }, []);
-
-  const handleMouseLeave = useCallback((e) => {
-    cardRef.current.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
-  }, []);
-
-  useEffect(() => {}, []);
-
+  const awardBlogList = [
+    {
+      title: "MERIT OF '5 GOOD STUDENTS'",
+      subTitle:
+        "National University, Vietnam National University - Ho Chi Minh City",
+      subTitle2: "2020-2021 and 2019-2020",
+      description:
+        "The title for students who excel in many aspects, including academic work, physical health, social integration, moral character and volunteering - an activity organized by the Student Union to honor efforts and achievements during the school year",
+      image: "SV5T",
+    },
+    {
+      title: "Shecode",
+      subTitle:
+        "National University, Vietnam National University - Ho Chi Minh City",
+      subTitle2: "Year 2020",
+      description: "",
+      image: "shecodes",
+    },
+    {
+      title: "Certificate of Advanced youth follow Uncle Ho's grant school",
+      subTitle:
+        "National University, Vietnam National University - Ho Chi Minh City",
+      subTitle2: "Year 2020",
+      description: "",
+      image: "IU",
+    },
+    {
+      title: "TOEIC 2022",
+      subTitle:
+        "TOEIC: 830, TOEIC SW 270",
+      subTitle2: "Year 2020",
+      description: "",
+      image: "TOEIC",
+    },
+    {
+      title: "Certificate of Advanced youth follow Uncle Ho's grant school",
+      subTitle:
+        "National University, Vietnam National University - Ho Chi Minh City",
+      subTitle2: "Year 2020",
+      description: "",
+      image: "Cambridge",
+    },
+  ];
   return (
     <div className="h-screen flex flex-col justify-center items-start w-full">
-      <h2 className="titleSection">Pieces I&apos;ve written</h2>
-      <div className="flex justify-center w-full">
-        <a
-          ref={cardRef}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          href="https://link.medium.com/rwDvkDP57xb"
-          className="w-full bg-[--light-navy] p-6 rounded-md shadow-xl hover:shadow-[--lightest-navy]"
-          style={{
-            transition: "transform 0.1s ease",
-            transformStyle: "preserve-3d",
-            willChange: "transform",
-          }}
-        >
-          <div
-            className="bg-cover h-[300px] mb-4"
-            style={{
-              backgroundImage: `url(${blog1Bg})`,
-            }}
-          />
-          <h3 className="text-[--green]">
-            Build a color picker Chrome extension in 10 minutes
-          </h3>
-          <p className="">
-            A simple tutorial on how to create a color picker Chrome&apos;s
-            extension
-          </p>
-          <span className="text-xs">
-            *note: You have to fake ip in order to access Medium
-          </span>
-        </a>
+      <h2 className="titleSection">Honor & Awards</h2>
+      <div className="grid gap-4 w-full gridTemplate">
+        {awardBlogList.map((award, index) => (
+          <FlipCard key={index} content={award}></FlipCard>
+        ))}
       </div>
     </div>
   );

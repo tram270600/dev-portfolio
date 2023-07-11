@@ -31,7 +31,6 @@ export default function ScrollIndicator() {
   return (
     <div className="scroll-indicator">
       {pageSelectionIds.map((pageSelectionId, index) => (
-        // eslint-disable-next-line jsx-a11y/anchor-has-content
         <a
           href={pageSelectionId}
           key={index}

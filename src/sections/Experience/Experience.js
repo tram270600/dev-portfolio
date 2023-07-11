@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { useCallback, useState } from "react";
 import "./Experience.scss";
+import FloatingShape from "components/FloatingShape/FloatingShape";
 
 const EXPERIENCE_SECTION = {
   GOT_IT: "got-it",
@@ -78,6 +79,7 @@ export default function Experience() {
 
   return (
     <>
+      <FloatingShape shape='circle'></FloatingShape>
       <h2 className="titleSection">My experiences</h2>
       <div className="flex flex-col md:flex-row px-0 md:px-8 max-w-full">
         <div
