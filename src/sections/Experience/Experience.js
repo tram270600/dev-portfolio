@@ -80,7 +80,7 @@ export default function Experience() {
   return (
     <>
       <FloatingShape shape='circle'></FloatingShape>
-      <h2 className="titleSection">My experiences</h2>
+      <h2 className="titleSection">Experiences</h2>
       <div className="flex flex-col md:flex-row px-0 md:px-8 max-w-full">
         <div
           id="companyList"

@@ -1,6 +1,13 @@
 import "./MySkill.scss";
 export default function MySkill() {
-  const softwareSkills = ["VSCode", "Github"];
+  const softwareSkills = [
+    "VSCode",
+    "Github",
+    "Storybook",
+    "Figma",
+    "Sourcetree",
+    "Fork",
+  ];
   const softSkills = [
     "Communicative",
     "Collaborative",
@@ -10,19 +17,21 @@ export default function MySkill() {
     "Problem Solving",
   ];
   const technologies = [
+    "Front-end Development",
     "ReactJS",
-    "HTML, CSS",
+    "Angular",
+    "HTML",
+    "CSS/SCSS",
     "JavaScript",
     "TypeScript",
     "Jest",
-    "Cypress",
-    "VueJS",
+    "React Testing",
     "Git",
     "Tailwind",
   ];
   return (
     <>
-      <h2 className="titleSection">My skill</h2>
+      <h2 className="titleSection">Expertise</h2>
       <span className="card__header">Technologies</span>
       <div className="card__container">
         {technologies.map((technology, index) => (

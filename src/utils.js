@@ -3,6 +3,7 @@ export const AnchorDataList = [
   "About",
   "Experience",
   "Works",
+  "Awards",
   "Skills",
   "Contact",
 ];

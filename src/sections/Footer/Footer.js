@@ -113,14 +113,10 @@ export default function Footer() {
         <div className="footer-content">
           <CVButton />
           <div>
-            © {new Date().getFullYear()}, built by{" "}
+            © {new Date().getFullYear()}, built and designed by{" "}
             <a className="about-me" href="#About">
-              Datnguyen
+              Tram Nguyen
             </a>{" "}
-            and hugely inspired by{" "}
-            <a className="text-[--green]" href="https://v4.brittanychiang.com/">
-              Brittany Chiang
-            </a>
           </div>
         </div>
       </div>
