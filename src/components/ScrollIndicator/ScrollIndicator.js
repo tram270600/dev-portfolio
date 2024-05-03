@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ScrollIndicator.scss";
 
 export default function ScrollIndicator() {
-  const pageSelections = ["Greeting", "About", "Experience", "Works", "Skills", "Contact"];
+  const pageSelections = ["Greeting", "About", "Experience", "Education", "Works", "Skills", "Contact"];
   const pageSelectionIds = pageSelections.map(
     (pageSelection) => "#" + pageSelection
   );

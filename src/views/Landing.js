@@ -9,6 +9,7 @@ import Education from "sections/Education/Education";
 import Experience from "sections/Experience/Experience.js";
 import MyBlog from "sections/MyBlog/MyBlog";
 import MySkill from "sections/MySkill/MySkill";
+import Works from "sections/Works/Works";
 import ContactMethod from "sections/ContactMethod/ContactMethod";
 import RotateSquare from "components/RotateSquare/RotateSquare";
 import GlowingMouse from "components/GlowingMouse/GlowingMouse";
@@ -64,6 +65,9 @@ export default function Landing() {
           </SectionWrapper>
           <SectionWrapper>
             <Education />
+          </SectionWrapper>
+          <SectionWrapper>
+            <Works />
           </SectionWrapper>
           <SectionWrapper>
             <MyBlog />
