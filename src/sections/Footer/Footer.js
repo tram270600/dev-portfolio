@@ -17,9 +17,9 @@ export default function Footer() {
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const personalInfo = {
-    address: "District 8, HCM City, Vietnam",
-    phone: "(+84) 34 324 46 44",
-    email: "nguyenquocdat2511998@gmail.com",
+    address: "District 10, HCM City, Vietnam",
+    phone: "(+84) 77 571 12 66",
+    email: "ngntram.ityu@gmail.com",
   };
 
   const timeString = useMemo(() => {
@@ -92,13 +92,13 @@ export default function Footer() {
                     {personalInfo.address}
                   </p>
                 </a>
-                <a href="tel:0343244644">
+                <a href="tel:0775711266">
                   <p data-length-info={personalInfo.phone}>
                     {personalInfo.phone}
                   </p>
                 </a>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguyenquocdat2511998@gmail.com "
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ngntram.ityu@gmail.com "
                   target="_blank"
                   rel="noreferrer"
                 >

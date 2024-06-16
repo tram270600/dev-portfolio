@@ -46,7 +46,7 @@ const experienceData = [
   },
 ];
 
-const DescriptionItem = ({ content }) => (
+export const DescriptionItem = ({ content }) => (
   <div className="flex">
     <span className="text-[--green] text-xl">-</span>
     <p className="ml-2">{content}</p>

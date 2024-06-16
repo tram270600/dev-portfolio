@@ -90,10 +90,10 @@ export default function Experience() {
             <button
               key={experience.companyName}
               className={classNames(
-                "h-12 hover mb-1 px-5 py-2 border-b md:border-l md:border-b-0 md:text-left hover:bg-[--light-navy] whitespace-nowrap",
+                "h-12 hover mb-1 px-5 py-2 border-b md:border-l md:border-b-0 md:text-left hover:bg-[--green-shadow] whitespace-nowrap",
                 selectedCompanyIndex === index
                   ? "text-[--green] border-b-[--green] lg:border-l-[--green]"
-                  : "border-l-[--lightest-navy]"
+                  : "border-l-[--green-shadow]"
               )}
               onClick={() => handleSelectCompany(index)}
             >

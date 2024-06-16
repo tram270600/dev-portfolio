@@ -14,7 +14,7 @@
 }
 
 .card {
-  background-color: #192437;
+  background-color: hsl(222, 15%, 13%);
   border-radius: 4px;
   box-shadow: -0.5rem 0 1rem var(--navy);
   transition: 0.4s ease-out;
@@ -76,7 +76,7 @@
 
   .bar {
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 20px;
     height: 5px;
     width: 150px;

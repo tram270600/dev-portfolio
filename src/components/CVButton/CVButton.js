@@ -13,7 +13,7 @@ export default function CVButton() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Check out my CV
+        View Full Resume
       </a>
     </>
   );

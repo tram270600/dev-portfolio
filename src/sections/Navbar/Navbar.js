@@ -34,7 +34,7 @@ export default function Navbar() {
       <CVButton />
       <div
         className={classNames(
-          "wrapper text-white bg-[--light-navy]",
+          "wrapper text-white bg-[--green-shadow]",
           navbarOpen ? "wrapperOpen" : ""
         )}
       >

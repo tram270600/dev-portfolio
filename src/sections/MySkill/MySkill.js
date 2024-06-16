@@ -44,7 +44,7 @@ export default function MySkill() {
           </div>
         ))}
       </div>
-      <span className="card__header">Softskills</span>
+      <span className="card__header">Soft Skills</span>
       <div className="card__container">
         {softSkills.map((softSkill, index) => (
           <div key={index} className="card cursor-pointer">

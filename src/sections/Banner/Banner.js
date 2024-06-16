@@ -13,8 +13,7 @@ export default function Banner() {
         I&apos;m a Front-end developer.
       </h2>
       <p className="text-[--slate]">
-        I&apos;m a front-end developer based in Ho Chi Minh City, Vietnam. I
-        have a passion for building things by code.
+        A Result-Oriented Web Developer, I craft exceptional digital experiences <br/> with a blend of creativity and technical expertise.
       </p>
     </div>
   );
