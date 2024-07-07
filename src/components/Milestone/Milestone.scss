@@ -1,0 +1,49 @@
+.cursor {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  z-index: 999;
+  background-color: var(--dark-slate);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.active-cursor {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  z-index: 999;
+  background-color: var(--green-500);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px var(--green-500), 0 0 16px var(--green-500),
+    0 0 10px var(--green-500);
+}
+
+@keyframes colorsMouse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.active-cursor::before {
+  content: "";
+  position: absolute;
+  background-color: var(--green-500);
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-40%, -40%);
+  border-radius: 50%;
+  animation: colorsMouse 3s infinite;
+}

@@ -1,0 +1,53 @@
+.demo {
+  position: relative;
+  transform: translate(30px, 30px);
+}
+
+.demo > * + * {
+  margin-left: -150px;
+  border-radius: 20px;
+  box-shadow: 0 -1px 10px rgba(0 0 0 / 60%);
+}
+
+.fade-in-section {
+  .demo > :first-child {
+    border-radius: 20px;
+    transform: translate3d(0px, -50px, 0px) rotate(0deg);
+    transition: transform 1s;
+  }
+  .demo > :nth-child(2) {
+    transform: translate3d(0px, -20px, 0px) rotate(0deg);
+    transition: transform 1s;
+  }
+  .demo > :last-child {
+    transform: translate3d(0px, 30px, 0px) rotate(0deg);
+    transition: transform 1s;
+  }
+}
+
+.fade-in-section.is-visible {
+  .demo > :first-child {
+    transform: translate3d(-20px, -50px, 0px) rotate(-10deg);
+  }
+
+  .demo > :nth-child(2) {
+    transform: translate3d(0px, -20px, 0px) rotate(-2.9752deg);
+  }
+
+  .demo > :last-child {
+    transform: translate3d(10px, 30px, 0px) rotate(5deg);
+  }
+}
+
+.profileImage {
+  filter: grayscale(100%) contrast(1);
+}
+
+.profileImage:hover {
+  filter: none;
+  z-index: 1;
+}
+
+.spotlight-img {
+  filter: none;
+}

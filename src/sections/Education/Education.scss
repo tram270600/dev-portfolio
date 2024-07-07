@@ -1,0 +1,21 @@
+.milestone-box {
+  position: relative;
+  height: max-content;
+  button {
+    text-align: center;
+  }
+}
+
+.educationList {
+  padding-bottom: 8px;  
+}
+.educationList::-webkit-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--light-slate);
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.educationList {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--light-slate);
+}

@@ -1,0 +1,59 @@
+@import "../../styles/colors.scss";
+.project-content {
+  padding: 20px;
+  &:hover {
+    border-radius: var(--border-radius);
+    .project-title {
+      color: var(--green-500);
+    }
+    .project-image {
+      background-color: white;
+      img {
+        filter: none;
+      }
+    }
+    .read-more__icon {
+      transform: translate(5px, 0px);
+    }
+    .read-more__icon svg {
+      stroke: var(--green-500);
+      stroke-width: 1;
+    }
+    .read-more__text {
+      color: var(--lightest-slate);
+      border-bottom: 2px solid var(--green-500);
+    }
+  }
+}
+
+.project-title {
+  font-size: 1.563rem;
+  font-weight: 700;
+  text-wrap: pretty;
+}
+
+.project-description {
+  text-wrap: pretty;
+  max-width: 250vw;
+}
+
+.project-image {
+  background-color: #64ffd0;
+  border-radius: var(--border-radius);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+
+  img {
+    border-radius: var(--border-radius);
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+  }
+}
+
+.read-more__text {
+  color: var(--light-slate);
+}
+
+
+
+
