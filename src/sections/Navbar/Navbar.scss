@@ -108,33 +108,31 @@
   left: 5px;
 }
 
-@keyframes transform-effect {
-  0%, 15%, 85%, 100% {
-    transform: rotate(0);
+@keyframes tree-transform-effect {
+  0%, 15%, 75%, 85%, 100% {
+    opacity: 0;
   }
 
-  25%, 75% {
-    transform: rotate(90deg);
-  }
-}
-
-.transform-animation {
-  width: 32px;
-  height: 32px;
-  animation: transform-effect 5s infinite;
-}
-
-@keyframes dot-transform-effect {
-  0%, 15%, 85%, 100% {
-    transform: translateX(0);
-  }
-  25%, 75% {
-    transform: translate(12px, -22px);
+  25% {
+    opacity: 100;
   }
 }
 
-.dot-transform-animation {
-  animation: dot-transform-effect 5s infinite;
+.tree-transform-animation {
+  animation: tree-transform-effect 5s infinite;
+  animation-iteration-count: 2;
+}
+
+.upperLeaf-transform-animation {
+  animation: tree-transform-effect 5s infinite;
+  animation-iteration-count: 2;
+  animation-delay: 0.8s;
+}
+
+.lowerLeaf-transform-animation {
+  animation: tree-transform-effect 5s infinite;
+  animation-iteration-count: 2;
+  animation-delay: 0.4s;
 }
 
 nav svg {
@@ -142,22 +140,40 @@ nav svg {
   height: 48px;
 }
 
-.firstDot,
-.secondDot {
-  width: 9.3px;
-  height: 9.3px;
-}
+.icon-animation {
+  &:hover {
+    .letter {
+      animation: tree-transform-effect 5s infinite;
+    }
+    .upperLeaf {
+      animation: tree-transform-effect 5s infinite;
+      animation-delay: 0.8s;
+    }
 
-.firstDot {
-  left: 2px;
-  top: 11px;
-}
-
-.secondDot {
-  left: 17px;
-  top: 11px;
+    .lowerLeaf{
+      animation: tree-transform-effect 5s infinite;
+      animation-delay: 0.4s;
+    }
+  }
 }
 
 .letter {
   left: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.upperLeaf, .lowerLeaf {
+  width: 36px;
+  height: 36px;
+}
+
+.upperLeaf {
+  top: -16px;
+  left: 20px;
+}
+
+.lowerLeaf {
+  top: -12px;
+  left: -6px;
 }

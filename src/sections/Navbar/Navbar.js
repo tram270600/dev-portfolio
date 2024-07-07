@@ -2,8 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import CVButton from "components/CVButton/CVButton";
 import { AnchorDataList } from "utils";
-import { ReactComponent as LogoOrigin } from "assets/logo/DLetterLogo.svg";
-import { ReactComponent as LogoDot } from "assets/logo/DDot.svg";
+import { ReactComponent as LogoTree } from "assets/logo/TLetterTree.svg";
+import { ReactComponent as LogoUpperLeaf } from "assets/logo/TLetterUpperLeaf.svg";
+import { ReactComponent as LogoLowerLeaf } from "assets/logo/TLetterLowerLeaf.svg";
 import "./Navbar.scss";
 
 export default function Navbar() {
@@ -23,11 +24,11 @@ export default function Navbar() {
         className="text-[--green] text-4xl leading-5 font-bold inline-block py-2 uppercase"
         href="#"
       >
-        <div className="w-12 h-12">
+        <div className="w-12 h-12 icon-animation">
           <a href="#Greeting" className="logoEffect">
-            <LogoDot className="absolute firstDot dot-transform-animation" />
-            <LogoOrigin className="absolute letter transform-animation" />
-            <LogoDot className="absolute secondDot dot-transform-animation" />
+            <LogoUpperLeaf className="absolute upperLeaf upperLeaf-transform-animation" />
+            <LogoTree className="absolute letter tree-transform-animation" />
+            <LogoLowerLeaf className="absolute lowerLeaf lowerLeaf-transform-animation" />
           </a>
         </div>
       </a>

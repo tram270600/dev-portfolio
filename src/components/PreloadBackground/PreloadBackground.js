@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./PreloadBackground.css";
-import DLogo from "assets/logo/DLogo.svg";
+import TLogo from "assets/logo/TLogo.svg";
 
 export default function PreloadBackground() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function PreloadBackground() {
 
   return (
     <div className="preloadWrapper flex justify-center items-center w-screen h-screen bg-[--navy] z-[999] relative">
-      <img src={DLogo} className="preloard" width={100} height={100} />
+      <img src={TLogo} className="preloard" width={100} height={100} />
     </div>
   );
 }

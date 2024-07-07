@@ -1,5 +1,20 @@
+@import "../../styles/colors.scss";
+
 .gridTemplate {
     grid-template-columns: repeat(5, 1fr);
+}
+.blog-content {
+    padding-bottom: 20px;  
+}
+.blog-content::-webkit-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-slate) var(--light-slate);
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.blog-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-slate) var(--light-slate);
 }
 
 @media screen and (min-width: 640px) {

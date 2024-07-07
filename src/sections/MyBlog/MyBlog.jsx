@@ -94,7 +94,7 @@ export default function MyBlog() {
   return (
     <div className="h-screen flex flex-col justify-center items-start w-full">
       <h2 className="titleSection">Honor & Awards</h2>
-      <div className="grid gap-4 w-full gridTemplate overflow-x-scroll md:overflow-visible">
+      <div className="blog-content grid gap-4 w-full gridTemplate overflow-x-scroll md:overflow-visible">
         {awardBlogList.map((award, index) => (
           <FlipCard key={index} content={award}></FlipCard>
         ))}
