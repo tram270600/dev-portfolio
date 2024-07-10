@@ -13,21 +13,15 @@ export default function AboutMe() {
       <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
         <div className="flex flex-col gap-2 md:gap-2.5">
           <p>
-            Hello! My name is Dat. I was born in 1998 in Nha Trang City, a
-            stunning beach. I studied and graduated with a software engineering
-            major in Ho Chi Minh City University of Science in 2020.
+            “Xin chào”! I am Tram and <span className="text-[--lightest-slate]">I love creating software in the sweet spot where great design meets solid engineering</span> — making things that not only look good but also work flawlessly.
+          </p>
+          <p className="hidden md:block">
+            Back in 2008, I spent a summer time helping my family manage our internet shop and discovered my passion for technology despite facing stereotypes about girls in the technology industry, I pursued my dream of becoming a game programmer.
           </p>
           <p>
-            I have three years of experience in front-end development. I am
-            confident that I have deep knowledge of necessary languages and
-            technologies for Front-end.
+            Today, with <span className="text-[--lightest-slate]">over 2 years of experience</span> as a Frontend Developer, I've <span className="text-[--lightest-slate]">worked across diverse industries</span> including transportation, insurance, and fashion. Moreover, <span className="text-[--lightest-slate]">effective communication</span> has been key to my success, honed through collaborations with colleagues from Denmark, Poland, the Czech Republic, and England.
           </p>
-          <p>
-            I&apos;m willing to learn new things, and not afraid of complex
-            tasks. I always try to read and stay up to date with the latest
-            technology news.
-          </p>
-          <button className="text-left">More about me</button>
+          <p>This journey with global experience has equipped me with valuable insights into different sector needs, to achieve outstanding outcomes through seamless collaboration.</p>
         </div>
 
         <div className="demo flex">
