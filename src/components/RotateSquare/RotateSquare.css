@@ -8,21 +8,20 @@
   font-family: "Montserrat", sans-serif;
   margin-left: -24px;
 }
-
 .cube {
   position: absolute;
   top: 80vh;
   left: 45vw;
   width: 10px;
   height: 10px;
-  border: solid 1px #57cbff;
+  border: solid 1px #57ff81;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   -webkit-animation: cube 12s ease-in forwards infinite;
           animation: cube 12s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
-  border-color: #57cbff;
+  border-color: #57ff81;
 }
 .cube:nth-child(2) {
   -webkit-animation-delay: 2s;

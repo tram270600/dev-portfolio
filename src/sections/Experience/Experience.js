@@ -21,7 +21,14 @@ const experienceData = [
     id: EXPERIENCE_SECTION.NETCOMPANY,
     companyName: "Netcompany",
     time: "Nov-2022 - present",
-    contents: ["Participate in the development of the educational website system.", "The project I mainly work on is Studyboots. This is a whiteboard website. Students and professionals can interact directly by voice, chat, and drawing."],
+    contents: [
+      "Developing and maintaining the Front-end of web-based applications", 
+      "Authored comprehensive documents including Analysis, Design, Integration and Maintenance guides", 
+      "Experienced with React, and Angular, applied advanced principles like TDD, CDD, SOLID and OOP", 
+      "Integrate with core system, develop API endpoint with RESTful API principles, and RPC protocols", 
+      "Wrote unit tests for every new feature to identify and rectify bugs",
+      "Familiar with using CI/CD pipelines with Jenkins, and Azure DevOps."
+    ],
     skills: [
       "ReactJs",
       "Typescript",
@@ -29,7 +36,10 @@ const experienceData = [
       "CSS",
       "Javascript",
       "Jest",
-      "Cypress",
+      "React Testing library",
+      "Jenkins",
+      "Azure DevOps",
+      "Storybook"
     ],
   },
   {
@@ -37,8 +47,15 @@ const experienceData = [
     id: EXPERIENCE_SECTION.JH,
     companyName: "Journey Horizon",
     time: "Oct-2020 - Jun-2022",
-    contents: ["Working with marketplace website. Build Front-end with ReactJs and Back-end with NodeJs. Deploy website to AWS. Install and apply Voucherify, and many features using AWS services.", "Meeting and communicating with customers in English."],
-    skills: ["ReactJs", "HTML", "CSS", "Javascript", "NodeJs", "AWS"],
+    contents: [
+      "Design analysis and build UI responsive for variant breakpoints applying a mobile-first approach",
+      "Practive designing emails using specific HTML and CSS support, considering limitations in email rendering for some CSS properties",
+      "Implement and test responsive emails on different Email Service Providers (ESP)",
+      "Utilize Git for version control, managing code repositories, branching, merging",
+      "Knowledge of SEO principles and best practices",
+      "Understanding WKAG Standards"
+    ],
+    skills: ["ReactJs", "HTML", "CSS", "Javascript", "NodeJs", "MailChimp"],
   },
   {
     title: "UI/UX Designer",
@@ -46,16 +63,12 @@ const experienceData = [
     companyName: "SSSMarket",
     time: "Jul-2022 - Oct-2022",
     contents: [
-      "Taking responsibility for conducting ideas, creating engaging and user-friendly digital interfaces for websites, mobile applications, and other interactive media", 
-      "Having the privilege of shaping digital products from concept to launch, focusing on creating meaningful user experiences and driving business goals.",
-      "Ideation & Prototyping: Generating innovative ideas through brainstorming sessions and sketching, translating concepts into wireframes, mockups, and interactive prototypes to visualize and validate design solutions.",
-      "User-Centered Design: Championing empathy-driven design practices to understand user needs, behaviors, and pain points deeply, conducting user research, creating personas, and mapping user journeys to inform design decisions.",
-      "Iterative Design: Iteratively refining designs based on user feedback, usability testing, and data analysis via Hotjar and Metabase.",
-      "Prototyping & Testing: Using tools like Figma, Mirco, Whimsical, or Sketch to create prototypes for user testing and validation. Conducting usability tests and iterating designs based on insights gathered to refine the product experience.",
-
-
+      "Taking responsibility for conducting ideas, creating engaging and user-friendly digital interfaces for websites, mobile applications, and other interactive media",
+      "Specializing in Ideation & Prototyping, User-Centered Design, Metrics-Driven Design, Iterative Design, Prototyping & Testing, and Design Systems",
+      "Conducting user research, creating personas, and mapping user journeys to inform design decisions.",
+      "Generating innovative ideas through brainstorming sessions and sketching, translating concepts into wireframes, mockups, and interactive prototypes using tools like Figma, Mirco, Whimsical.",
     ],
-    skills: ["ReactJs", "Typescript", "HTML", "CSS", "Javascript"],
+    skills: ["Figma", "Fig jam", "Micro", "Metabase",  "Wix"],
   },
 ];
 
