@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "cross-env ESLINT_NO_DEV_ERRORS=true react-scripts start",
-    "build": "cross-env ESLINT_NO_DEV_ERRORS=true BUILD_PATH='./dist' react-scripts build",
+    "build": "cross-env ESLINT_NO_DEV_ERRORS=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
