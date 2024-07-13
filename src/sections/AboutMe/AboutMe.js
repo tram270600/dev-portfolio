@@ -19,7 +19,7 @@ export default function AboutMe() {
             Back in 2008, I spent a summer time helping my family manage our internet shop and discovered my passion for technology despite facing stereotypes about girls in the technology industry, I pursued my dream of becoming a game programmer.
           </p>
           <p>
-            Today, with <span className="text-[--lightest-slate]">over 2 years of experience</span> as a Frontend Developer, I've <span className="text-[--lightest-slate]">worked across diverse industries</span> including transportation, insurance, and fashion. Moreover, <span className="text-[--lightest-slate]">effective communication</span> has been key to my success, honed through collaborations with colleagues from Denmark, Poland, the Czech Republic, and England.
+            Today, with <span className="text-[--lightest-slate]">over 2 years of experience</span> as a Frontend Developer, I&apos;ve <span className="text-[--lightest-slate]">worked across diverse industries</span> including transportation, insurance, and fashion. Moreover, <span className="text-[--lightest-slate]">effective communication</span> has been key to my success, honed through collaborations with colleagues from Denmark, Poland, the Czech Republic, and England.
           </p>
           <p>This journey with global experience has equipped me with valuable insights into different sector needs, to achieve outstanding outcomes through seamless collaboration.</p>
         </div>
