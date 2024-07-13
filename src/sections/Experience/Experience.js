@@ -116,7 +116,7 @@ export default function Experience() {
             {experienceData[selectedCompanyIndex].title}
           </p>
           <p className="mb-5">{experienceData[selectedCompanyIndex].time}</p>
-          {experienceData[selectedCompanyIndex].contents.map((content) => (<DescriptionItem content={content} />))}
+          {experienceData[selectedCompanyIndex].contents.map((content, id) => (<DescriptionItem key={`content${id}`}content={content} />))}
           <div className="flex gap-2 flex-wrap mt-5">
             {experienceData[selectedCompanyIndex].skills.map((skill) => (
               <Skill key={skill} skill={skill} />
