@@ -4,9 +4,9 @@ import "./Experience.scss";
 import FloatingShape from "components/FloatingShape/FloatingShape";
 
 const EXPERIENCE_SECTION = {
-  GOT_IT: "got-it",
-  SHOPEE: "shopee",
+  NETCOMPANY: "netcompany",
   JH: "jh",
+  SSSMARKET: "sssmarket",
 };
 
 const Skill = ({ skill }) => (
@@ -18,11 +18,17 @@ const Skill = ({ skill }) => (
 const experienceData = [
   {
     title: "Front-end developer",
-    id: EXPERIENCE_SECTION.GOT_IT,
-    companyName: "Got It Vietnam",
+    id: EXPERIENCE_SECTION.NETCOMPANY,
+    companyName: "Netcompany",
     time: "Nov-2022 - present",
-    p1: "Participate in the development of the educational website system.",
-    p2: "The project I mainly work on is Studyboots. This is a whiteboard website. Students and professionals can interact directly by voice, chat, and drawing.",
+    contents: [
+      "Developing and maintaining the Front-end of web-based applications", 
+      "Authored comprehensive documents including Analysis, Design, Integration and Maintenance guides", 
+      "Experienced with React, and Angular, applied advanced principles like TDD, CDD, SOLID and OOP", 
+      "Integrate with core system, develop API endpoint with RESTful API principles, and RPC protocols", 
+      "Wrote unit tests for every new feature to identify and rectify bugs",
+      "Familiar with using CI/CD pipelines with Jenkins, and Azure DevOps."
+    ],
     skills: [
       "ReactJs",
       "Typescript",
@@ -30,35 +36,39 @@ const experienceData = [
       "CSS",
       "Javascript",
       "Jest",
-      "Cypress",
+      "React Testing library",
+      "Jenkins",
+      "Azure DevOps",
+      "Storybook"
     ],
-  },
-  {
-    title: "Front-end developer",
-    id: EXPERIENCE_SECTION.SHOPEE,
-    companyName: "Shopee Vietnam",
-    time: "Jul-2022 - Oct-2022",
-    p1: "Develop and maintain operator websites with ReactJS, Redux, and Ant Design Library. Use Single-spa to build front-end micro-services.",
-    p2: "Research React testing, unit test, and integration test. Working with SCRUM framework.",
-    skills: ["ReactJs", "Typescript", "HTML", "CSS", "Javascript"],
   },
   {
     title: "Software developer",
     id: EXPERIENCE_SECTION.JH,
     companyName: "Journey Horizon",
     time: "Oct-2020 - Jun-2022",
-    p1: "Working with marketplace website. Build Front-end with ReactJs and Back-end with NodeJs. Deploy website to AWS. Install and apply Voucherify, and many features using AWS services.",
-    p2: "Meeting and communicating with customers in English.",
-    skills: ["ReactJs", "HTML", "CSS", "Javascript", "NodeJs", "AWS"],
+    contents: [
+      "Design analysis and build UI responsive for variant breakpoints applying a mobile-first approach",
+      "Practive designing emails using specific HTML and CSS support, considering limitations in email rendering for some CSS properties",
+      "Implement and test responsive emails on different Email Service Providers (ESP)",
+      "Utilize Git for version control, managing code repositories, branching, merging",
+      "Knowledge of SEO principles and best practices",
+      "Understanding WKAG Standards"
+    ],
+    skills: ["ReactJs", "HTML", "CSS", "Javascript", "NodeJs", "MailChimp"],
   },
   {
-    title: "Front-end developer intern",
-    id: EXPERIENCE_SECTION.LIEN_A,
-    companyName: "Lien A",
-    time: "Sep-2019 - May-2020",
-    p1: "Build a web app with Nuxt.js framework for Front-end and NodeJs for Back-end.",
-    p2: "Learn about Magento and build Front-end with CMS page builder tool.",
-    skills: ["NuxtJs", "HTML", "CSS", "Javascript"],
+    title: "UI/UX Designer",
+    id: EXPERIENCE_SECTION.SSSMARKET,
+    companyName: "SSSMarket",
+    time: "Jul-2022 - Oct-2022",
+    contents: [
+      "Taking responsibility for conducting ideas, creating engaging and user-friendly digital interfaces for websites, mobile applications, and other interactive media",
+      "Specializing in Ideation & Prototyping, User-Centered Design, Metrics-Driven Design, Iterative Design, Prototyping & Testing, and Design Systems",
+      "Conducting user research, creating personas, and mapping user journeys to inform design decisions.",
+      "Generating innovative ideas through brainstorming sessions and sketching, translating concepts into wireframes, mockups, and interactive prototypes using tools like Figma, Mirco, Whimsical.",
+    ],
+    skills: ["Figma", "Fig jam", "Micro", "Metabase",  "Wix"],
   },
 ];
 
@@ -106,8 +116,7 @@ export default function Experience() {
             {experienceData[selectedCompanyIndex].title}
           </p>
           <p className="mb-5">{experienceData[selectedCompanyIndex].time}</p>
-          <DescriptionItem content={experienceData[selectedCompanyIndex].p1} />
-          <DescriptionItem content={experienceData[selectedCompanyIndex].p2} />
+          {experienceData[selectedCompanyIndex].contents.map((content) => (<DescriptionItem content={content} />))}
           <div className="flex gap-2 flex-wrap mt-5">
             {experienceData[selectedCompanyIndex].skills.map((skill) => (
               <Skill key={skill} skill={skill} />

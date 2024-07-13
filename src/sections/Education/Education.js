@@ -4,16 +4,16 @@ import "./Education.scss";
 import Milestone from "components/Milestone/Milestone";
 import FloatingShape from "components/FloatingShape/FloatingShape";
 
-const EXPERIENCE_SECTION = {
-  GOT_IT: "got-it",
-  SHOPEE: "shopee",
-  JH: "jh",
+const EDUCATION_SECTION = {
+  IU: "IU",
+  NTMK: "NTMK",
+  Colette: "Colette",
 };
 
 const experienceData = [
   {
     title: "International University",
-    id: EXPERIENCE_SECTION.GOT_IT,
+    id: EDUCATION_SECTION.IU,
     range: "2018-2022",
     companyName: "University",
     time: "Sep 2018 - Nov 2022",
@@ -27,7 +27,7 @@ const experienceData = [
   },
   {
     title: "Nguyen Thi Minh Khai",
-    id: EXPERIENCE_SECTION.SHOPEE,
+    id: EDUCATION_SECTION.NTMK,
     range: "2015 - 2018",
     companyName: "High School",
     time: "Jul-2022 - Oct-2022",
@@ -38,7 +38,7 @@ const experienceData = [
   },
   {
     title: "Colette",
-    id: EXPERIENCE_SECTION.JH,
+    id: EDUCATION_SECTION.Colette,
     range: "2011 - 2015",
     companyName: "Secondary School",
     time: "Oct-2020 - Jun-2022",

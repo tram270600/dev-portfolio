@@ -9,6 +9,7 @@ export default function RotateSquare() {
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
+      <div className="cube"></div>
     </div>
   );
 }
