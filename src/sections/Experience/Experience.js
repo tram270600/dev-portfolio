@@ -17,10 +17,10 @@ const Skill = ({ skill }) => (
 
 const experienceData = [
   {
-    title: "Front-end developer",
+    title: "Frontend developer - Consultant",
     id: EXPERIENCE_SECTION.NETCOMPANY,
     companyName: "Netcompany",
-    time: "Nov-2022 - present",
+    time: "Mar 2022 - Present",
     contents: [
       "Developing and maintaining the Front-end of web-based applications", 
       "Authored comprehensive documents including Analysis, Design, Integration and Maintenance guides", 
@@ -43,10 +43,10 @@ const experienceData = [
     ],
   },
   {
-    title: "Software developer",
+    title: "ReactJS Intern",
     id: EXPERIENCE_SECTION.JH,
     companyName: "Journey Horizon",
-    time: "Oct-2020 - Jun-2022",
+    time: "Jul 2021 - Sep 2021",
     contents: [
       "Design analysis and build UI responsive for variant breakpoints applying a mobile-first approach",
       "Practive designing emails using specific HTML and CSS support, considering limitations in email rendering for some CSS properties",
@@ -58,10 +58,10 @@ const experienceData = [
     skills: ["ReactJs", "HTML", "CSS", "Javascript", "NodeJs", "MailChimp"],
   },
   {
-    title: "UI/UX Designer",
+    title: "Product Designer",
     id: EXPERIENCE_SECTION.SSSMARKET,
     companyName: "SSSMarket",
-    time: "Jul-2022 - Oct-2022",
+    time: "Oct 2020 - May 2021",
     contents: [
       "Taking responsibility for conducting ideas, creating engaging and user-friendly digital interfaces for websites, mobile applications, and other interactive media",
       "Specializing in Ideation & Prototyping, User-Centered Design, Metrics-Driven Design, Iterative Design, Prototyping & Testing, and Design Systems",
@@ -112,12 +112,12 @@ export default function Experience() {
           ))}
         </div>
         <div className="pt-2">
-          <p className="text-[--green] text-2xl font-semibold">
+          <p className="text-[--green] text-xl md:text-2xl font-semibold">
             {experienceData[selectedCompanyIndex].title}
           </p>
           <p className="mb-5">{experienceData[selectedCompanyIndex].time}</p>
           {experienceData[selectedCompanyIndex].contents.map((content, id) => (<DescriptionItem key={`content${id}`}content={content} />))}
-          <div className="flex gap-2 flex-wrap mt-5">
+          <div className="flex gap-2 flex-wrap mt-5 hidden md:block">
             {experienceData[selectedCompanyIndex].skills.map((skill) => (
               <Skill key={skill} skill={skill} />
             ))}

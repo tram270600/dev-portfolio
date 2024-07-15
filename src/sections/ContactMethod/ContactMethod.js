@@ -10,7 +10,7 @@ export default function ContactMethod() {
           <li className="contact-method__component" key={contactName}>
             {contactName === "Gmail" ? (
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguyenquocdat2511998@gmail.com "
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ngntram.ityu@gmail.com "
                 key={index}
                 target="_blank"
                 rel="noreferrer"

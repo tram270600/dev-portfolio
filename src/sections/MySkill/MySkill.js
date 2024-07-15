@@ -44,17 +44,19 @@ export default function MySkill() {
           </div>
         ))}
       </div>
-      <span className="card__header">Soft Skills</span>
-      <div className="card__container">
-        {softSkills.map((softSkill, index) => (
-          <div key={index} className="card cursor-pointer">
-            <span className="titleCard">{softSkill}</span>
-            <div className="bar">
-              <div className="emptybar"></div>
-              <div className="filledbar"></div>
+      <span className="card__header hidden md:flex">Soft Skills</span>
+      <div className=" hidden md:flex">
+        <div className="card__container">
+          {softSkills.map((softSkill, index) => (
+            <div key={index} className="card cursor-pointer">
+              <span className="titleCard">{softSkill}</span>
+              <div className="bar">
+                <div className="emptybar"></div>
+                <div className="filledbar"></div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <span className="card__header">Software/Platform</span>
       <div className="card__container">

@@ -65,10 +65,10 @@ function Works() {
                 <Keyword key={keyword} keyword={keyword} id={id} />
               ))}
             </div>
-            <div className={"project-title"}>{project.title}</div>
-            <div className="text-xl font-semibold mb-7">{project.year}</div>
-            <p className="project-description">{project.description}</p>
-            <div className="flex gap-2 flex-wrap my-5 w-4/5">
+            <div className={"project-title text-xl md:text-2xl"}>{project.title}</div>
+            <div className="text-xl font-semibold mb-4">{project.year}</div>
+            <p className="project-description mb-4">{project.description}</p>
+            <div className="flex gap-2 flex-wrap my-5 w-4/5 hidden md:flex">
               {project.techList.map((tech) => (
                 <Skill key={tech} skill={tech} />
               ))}

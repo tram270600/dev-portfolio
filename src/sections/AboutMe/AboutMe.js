@@ -21,7 +21,7 @@ export default function AboutMe() {
           <p>
             Today, with <span className="text-[--lightest-slate]">over 2 years of experience</span> as a Frontend Developer, I&apos;ve <span className="text-[--lightest-slate]">worked across diverse industries</span> including transportation, insurance, and fashion. Moreover, <span className="text-[--lightest-slate]">effective communication</span> has been key to my success, honed through collaborations with colleagues from Denmark, Poland, the Czech Republic, and England.
           </p>
-          <p>This journey with global experience has equipped me with valuable insights into different sector needs, to achieve outstanding outcomes through seamless collaboration.</p>
+          <p className="hidden md:block">This journey with global experience has equipped me with valuable insights into different sector needs, to achieve outstanding outcomes through seamless collaboration.</p>
         </div>
 
         <div className="demo flex">

@@ -52,7 +52,7 @@ function ProjectDetails() {
                 <Keyword key={keyword} keyword={keyword} id={id} />
               ))}
             </div>
-            <div className={"project-title"}>{project.title}</div>
+            <div className={"project-title text-xl md:text-2xl"}>{project.title}</div>
             <div className="text-xl font-semibold mb-7">{project.year}</div>
             <div className="flex gap-2 flex-wrap mt-5">
               {project.techList.map((tech) => (
